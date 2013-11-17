@@ -1,0 +1,176 @@
+// Theme
+// -----------------------------------------------------------------
+
+backgroundColor = #381E11
+headingColor = #3498DB
+textColor = #7A8788
+textColorInverse = #EEE
+inputBackgroundColor = white
+
+fancy-font()
+  font-family Roboto, "helvetica neue", helvetica
+
+normal-font()
+  font-family Roboto, "helvetica neue", helvetica
+
+// Mixins
+// -----------------------------------------------------------------
+
+box-shadow(args...)
+  -webkit-box-shadow args
+  -moz-box-shadow args
+  box-shadow args
+
+transform(args...)
+  -webkit-transform args
+  -moz-transform args
+  transform args
+
+// Styles
+// -----------------------------------------------------------------
+
+*, *:before, *:after
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  box-sizing border-box
+
+html
+  padding 0
+  margin 0
+
+body
+  fancy-font()
+  font-size 18px
+  font-weight 300
+  padding 15px
+  color textColor
+  background-color backgroundColor
+  &.coffee
+    background backgroundColor url('coffee-beans.jpg')
+
+#content
+  position relative
+  margin 0 auto 20px auto
+  width 100%
+  max-width 480px
+  padding 0
+
+  li
+    list-style none
+    margin 0
+    padding 15px
+    background: white
+    box-shadow 1px 2px 5px rgba(0,0,0,0.2)
+    margin-top 10px
+    transition all .5s
+    opacity 0
+    display block
+    border-radius 2px
+    transform translate(300px, 0)
+
+    for num in (1..30)
+      &:nth-child({num})
+        transition-delay: 0.15s * (num)
+
+    &.active
+      opacity 1
+      transform translate(0, 0)
+
+    &.transparent-bg
+      background transparent
+      box-shadow none
+      padding 0
+
+h1,h2,h3,h4
+  font-weight 300
+  color headingColor
+
+h1
+  font-size 24px
+  margin 0
+  padding 0
+  text-align: center
+
+label
+  fancy-font()
+  font-weight 300
+  list-style none
+  margin 0
+  padding 0 0 6px 0
+  font-size 16px
+  line-height: 1.5
+
+a
+  color headingColor
+  text-decoration none
+  &:hover
+    text-decoration underline
+
+ul
+  &.questions, &.opinions
+    list-style none
+    margin 0
+    padding 0
+    > li
+      margin 0
+      padding 10px 0
+
+div
+  &.radio
+    padding 0 0 5px 0
+    label
+      font-size 16px
+
+input[type="text"]
+  normal-font()
+  font-weight 300
+  font-size 18px
+  padding 5px
+  padding-left 30px
+  margin: 20px 0
+  color textColor
+  background-color inputBackgroundColor
+  border-radius 2px
+  border 1px solid #999
+  outline none
+  display block
+  width 100%
+  -webkit-appearance none
+  outline 15px solid transparent
+  transition all .2s
+  background white url('pencil.svg') no-repeat 10px center
+  opacity 0.3
+  &:focus
+    outline 15px solid #EEE
+    opacity 1
+    // background-position 10px center
+
+input[type="radio"]
+  &:focus
+    // outline: thin dotted #333
+    // outline: 5px auto -webkit-focus-ring-color
+    // outline-offset: -2px
+
+input[type="submit"]
+  fancy-font()
+  font-size 18px
+  font-weight 300
+  padding 8px 15px
+  width 100%
+  background-color headingColor
+  color textColorInverse
+  border-radius 2px
+  outline none
+  display inline-block
+  -webkit-appearance none
+  margin 20px 0
+  border none
+  cursor pointer
+
+select
+  display block
+  margin-top 10px
+
+img.coffee
+  display: block
+  margin: 20px auto 20px auto
