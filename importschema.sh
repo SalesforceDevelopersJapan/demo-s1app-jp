@@ -1,2 +1,2 @@
 force login
-force import
+force import DESetup/metadata
