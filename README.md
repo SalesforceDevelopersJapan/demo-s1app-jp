@@ -18,7 +18,7 @@ cd df13-devkeynote-s1
 
 You objects, layouts, application, pages and quick action should now exist in your org.
 
-[Opinionator Node.js App (https://devcenter.heroku.com/articles/platform-api-reference)
+[Opinionator Node.js App] (https://devcenter.heroku.com/articles/platform-api-reference)
 -----------------------
 
 [platform API reference]
