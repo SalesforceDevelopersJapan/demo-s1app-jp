@@ -6,7 +6,13 @@ This is the metadata for setting up your developer edition to run the Opinionato
 Installation
 Clone this repo in to a new folder. Change to the new folder and then simply run the importschema.sh shell script.
 
-. importschema.sh
+Run
+---
+
+``` bash
+git clone https://github.com/developerforce/df13-devkeynote-s1.git
+cd 
+```
 
 You objects, layouts, application, pages and quick action should now exist in your org.
 
