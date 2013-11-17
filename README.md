@@ -18,6 +18,16 @@ cd df13-devkeynote-s1
 
 You objects, layouts, application, pages and quick action should now exist in your org.
 
-[Opinionator Node.js App] (https://devcenter.heroku.com/articles/platform-api-reference)
+Opinionator Node.js App
 -----------------------
+
+``` bash
+cd df13kn
+npm install
+heroku apps:create appname
+heroku config:set DATABASE_URL=<your heroku connect database connection>
+heroku config:set NODE_ENV=<test or development>
+git push heroku master
+
+```
 
