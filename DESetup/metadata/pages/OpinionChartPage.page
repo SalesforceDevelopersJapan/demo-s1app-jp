@@ -1,0 +1,11 @@
+<apex:page cache="false"
+	standardController="Opinion_Question__c"
+	standardStylesheets="false"
+	showHeader="false"
+	sidebar="false">
+        
+  <meta name="viewport" content="width=device-width"/>
+  <c:AnswersFilteredByQuestion questionName="{!Opinion_Question__c.Name}" 
+    reportId="00OE0000002BYUr">
+  </c:AnswersFilteredByQuestion>
+</apex:page>
