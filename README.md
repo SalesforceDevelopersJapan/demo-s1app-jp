@@ -11,7 +11,9 @@ Run
 
 ``` bash
 git clone https://github.com/developerforce/df13-devkeynote-s1.git
-cd 
+cd df13-devkeynote-s1
+. importschema.sh
+
 ```
 
 You objects, layouts, application, pages and quick action should now exist in your org.
