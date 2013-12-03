@@ -1,14 +1,9 @@
 # DF13 Dev Keynote Salesforce1 App #
 
----
-
 <a name="setup-and-configuration" />
 ## Setup and Configuration ##
 
-This is the metadata for setting up your developer edition to run the Opinionator app. Please make sure you have installed the Force CLI first.
-
-Installation
-Clone this repo in to a new folder. Change to the new folder and then simply run the importschema.sh shell script.
+Using the following steps you can setup all prerequisites for running the Dreamforce 13 developer keynote Salesforce1 demo application.
 
 #### Step 1: Setup a Developer Edition organization ####
 
@@ -46,7 +41,7 @@ Clone this repository.
 git clone https://github.com/developerforce/demo-df13-devkeynote-s1app.git
 ````
 
-#### Step 4: Import the schema into your org ####
+#### Step 4: Import the schema into your Developer Edition organization ####
 
 ````bash
 cd demo-df13-devkeynote-s1app
@@ -70,7 +65,7 @@ heroku version
 
 You should see version output similar to this: heroku-toolbelt/2.39.5 (x86_64-darwin10.8.0) ruby/1.9.3
 
-#### Step 6: Setup the Opinionator application ####
+#### Step 6: Setup Node.js and npm ####
 
 Confirm you have Node.js and npm installed and configured on your machine. The easiest way to do so is by running the following command from the bash:
 
@@ -92,10 +87,14 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
 Once Node.js and npm are installed, run the following commands:
 
+#### Step 7: Deploy Opinionator to Heroku ####
+
+Now that you have all the prerequisites installed, you need to deploy the **opinionator** application to Heroku.
+
 ````bash
 cd ../src/opinionator
 npm install
-heroku apps:create appname
+heroku apps:create [choose_an_appname]
 heroku config:set DATABASE_URL=<your heroku connect database connection>
 heroku config:set NODE_ENV=<test or development>
 git push heroku master
