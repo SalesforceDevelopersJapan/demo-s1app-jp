@@ -6,7 +6,7 @@
 
 
 <a name="technologies" />
-### Key Technologiues ###
+### Key Technologies ###
 
 
 <a name="setup-and-configuration" />
@@ -61,12 +61,46 @@ cd setup
 . importschema.sh
 ````
 
-You objects, layouts, application, pages and quick action should now exist in your org.
+Your objects, layouts, application, pages and quick action should now exist in your org.
 
-Opinionator Node.js App
+#### Step 5: Setup a Heroku account ####
+
+You will need a Heroku account for the opinionator application. You can sign up for a free account at [https://id.heroku.com/signup](https://id.heroku.com/signup).
+
+Once you have an account, setup the Heroku CLI and tools. Follow the instructions at [https://devcenter.heroku.com/articles/heroku-command](https://devcenter.heroku.com/articles/heroku-command) or download the toolbelt at [https://toolbelt.herokuapp.com/](https://toolbelt.herokuapp.com/).
+
+Confirm the Heroku CLI is installed by running the following command:
 
 ````bash
-cd df13kn
+heroku version
+````
+
+You should see version output similar to this: heroku-toolbelt/2.39.5 (x86_64-darwin10.8.0) ruby/1.9.3
+
+#### Step 6: Setup the Opinionator application ####
+
+Confirm you have Node.js and npm installed and configured on your machine. The easiest way to do so is by running the following command from the bash:
+
+````bash
+npm version
+````
+
+If the response is "npm: command not found" you need to install npm. Try the following from the command line:
+
+````bash
+brew install node
+````
+
+If you don't have homebrew installed you can do so with the following command:
+
+````bash
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)" 
+````
+
+Once Node.js and npm are installed, run the following commands:
+
+````bash
+cd ../src/opinionator
 npm install
 heroku apps:create appname
 heroku config:set DATABASE_URL=<your heroku connect database connection>
