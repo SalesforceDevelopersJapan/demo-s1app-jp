@@ -1,4 +1,4 @@
-# DEMO: DF13 Dev Keynote Salesforce1 App #
+# Dreamforce 13 Dev Keynote Salesforce1 App Demo #
 
 Demos are sets of step-by-step guides that are designed to help you learn how to use key capabilities of the Salesforce platform. Each demo provides instructions that guide you through the process of developing an application.
 
@@ -10,9 +10,9 @@ revise: This is the metadata for setting up your developer edition to run the Op
 
 This demo has the following repository structure:
 
-- **root**: In the **root** folder of this repository you will find the script for this demo, **demo.md**. Before starting the demo, make sure you have followed all the required steps indicated in the **Setup and Configuration** section of the document.
+- **root**: In the **root** folder of this repository you will find the script for this demo, **demo.md**. Before starting the demo, make sure you have followed all the required steps indicated in the **setup.md**.
 
-- **setup**: In the **setup** folder you will find all the dependencies required for this demo. The demo script will provide you with instructions on how to use this content.
+- **assets**: In the **assets** folder you will find all the dependencies required for this demo. The **setup.md** file provides you with instructions on how to use this content.
 
 - **src**: In the **src** folder you will the source code required to perform the demo.
 
