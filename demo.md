@@ -5,13 +5,8 @@
 ## Overview ##
 
 
-
-
 <a name="technologies" />
 ### Key Technologiues ###
-
-
-
 
 
 <a name="setup-and-configuration" />
@@ -21,7 +16,6 @@ This is the metadata for setting up your developer edition to run the Opinionato
 
 Installation
 Clone this repo in to a new folder. Change to the new folder and then simply run the importschema.sh shell script.
-
 
 #### Step 1 ####
 
@@ -33,13 +27,31 @@ Download the the Force command-line interface (CLI) tool. You can immediately do
 
 Alternatively, you can clone/fork the repository and build the executable yourself. For more information see the post [A Command-line Interface for Force.com](http://www.wadewegner.com/2013/11/a-command-line-interface-for-forcecom/).
 
+Once you have the executable, ensure you can run it from the command. For example, you can create the folder ~/bin for the force executable. Add the bin folder to your path with the following command:
 
+````bash
+export PATH=~/bin:$PATH
+````
 
-Run
+You may also need to update the permissions on the force executable in order to run it. To do so, run the following command:
+
+````bash
+chmod 755 force
+````
+
+#### Step 2 ####
+
+Clone this repository.
 
 ````bash
 git clone https://github.com/developerforce/df13-devkeynote-s1.git
+````
+
+#### Step 3 ####
+
+````bash
 cd df13-devkeynote-s1
+cd setup
 . importschema.sh
 ````
 
