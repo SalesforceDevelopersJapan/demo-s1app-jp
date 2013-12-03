@@ -14,8 +14,6 @@ This demo has the following repository structure:
 
 - **assets**: In the **assets** folder you will find all the dependencies required for this demo. The **SETUP.md** file provides you with instructions on how to use this content.
 
-- **src**: In the **src** folder you will the source code required to perform the demo.
-
 ### Contributing to the Repository ###
 
 If you find any issues or opportunities for improving this demo, fix them!  Feel free to contribute to this project by [forking](http://help.github.com/fork-a-repo/) this repository and make changes to the content.  Once you've made your changes, share them back with the community by sending a pull request. Please see [How to send pull requests](http://help.github.com/send-pull-requests/) for more information about contributing to Github projects.
