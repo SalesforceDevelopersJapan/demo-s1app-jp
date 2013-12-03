@@ -10,9 +10,9 @@ revise: This is the metadata for setting up your developer edition to run the Op
 
 This demo has the following repository structure:
 
-- **root**: In the **root** folder of this repository you will find the script for this demo, **demo.md**. Before starting the demo, make sure you have followed all the required steps indicated in the **setup.md**.
+- **root**: In the **root** folder of this repository you will find the script for this demo, **DEMO.md**. Before starting the demo, make sure you have followed all the required steps indicated in the **SETUP.md**.
 
-- **assets**: In the **assets** folder you will find all the dependencies required for this demo. The **setup.md** file provides you with instructions on how to use this content.
+- **assets**: In the **assets** folder you will find all the dependencies required for this demo. The **SETUP.md** file provides you with instructions on how to use this content.
 
 - **src**: In the **src** folder you will the source code required to perform the demo.
 
