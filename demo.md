@@ -17,7 +17,13 @@ This is the metadata for setting up your developer edition to run the Opinionato
 Installation
 Clone this repo in to a new folder. Change to the new folder and then simply run the importschema.sh shell script.
 
-#### Step 1 ####
+#### Step 1: Setup a Developer Edition organization ####
+
+If you are not already a member of the Force.com developer community, go to [http://developer.force.com/join](http://developer.force.com/join) and follow the instructions for signing up for a Developer Edition organization. Even if you already have Enterprise Edition, Unlimited Edition, or Performance Edition, use Developer Edition for developing, staging, and testing your solutions against sample data to protect your organization’s live data. This is especially true for applications that insert, update, or delete data (as opposed to simply reading data).
+
+If you already have a Developer Edition organization, verify that you have the “API Enabled” permission. This permission is enabled by default, but may have been changed by an administrator. For more information, see the help in the Salesforce user interface.
+
+#### Step 2: Setup the Force CLI tool ####
 
 Download the the Force command-line interface (CLI) tool. You can immediately download the precompiled binararies from the following locations:
 
@@ -27,7 +33,7 @@ Download the the Force command-line interface (CLI) tool. You can immediately do
 
 Alternatively, you can clone/fork the repository and build the executable yourself. For more information see the post [A Command-line Interface for Force.com](http://www.wadewegner.com/2013/11/a-command-line-interface-for-forcecom/).
 
-Once you have the executable, ensure you can run it from the command. For example, you can create the folder ~/bin for the force executable. Add the bin folder to your path with the following command:
+Once you have the executable, ensure you can run it from the command. For example, you can create the folder ~/bin for the force executable. Add the bin folder to your path with the following command (or update your .bash_profile):
 
 ````bash
 export PATH=~/bin:$PATH
@@ -39,18 +45,18 @@ You may also need to update the permissions on the force executable in order to 
 chmod 755 force
 ````
 
-#### Step 2 ####
+#### Step 3: Clone the repository ####
 
 Clone this repository.
 
 ````bash
-git clone https://github.com/developerforce/df13-devkeynote-s1.git
+git clone https://github.com/developerforce/demo-df13-devkeynote-s1app.git
 ````
 
-#### Step 3 ####
+#### Step 4: Import the schema into your org ####
 
 ````bash
-cd df13-devkeynote-s1
+cd demo-df13-devkeynote-s1app
 cd setup
 . importschema.sh
 ````
