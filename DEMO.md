@@ -65,7 +65,7 @@ We will create a report that displays answers to our opinion questions.
 
 10. Grab the **Report Id**. You can find this value in the browser URL. Copy this down to use later.
 
-	![Report Id]() 
+	![capturereportid](https://f.cloud.github.com/assets/746259/1708947/b2269cce-6116-11e3-92a2-5d3000de90b6.png)
 
 We have now successfully created the Report Type and Report required for the rest of the demo.
 
