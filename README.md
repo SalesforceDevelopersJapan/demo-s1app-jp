@@ -11,7 +11,7 @@ In this demo, you will use an application called **Opinionator** to learn about 
 - Publisher Actions (Quick Actions)
 - Compact Views
 
-To get started, review the instructions below.
+To get started please begin with these [Setup Instructions](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/SETUP.md).
 
 To see these demos in action please watch Dave Carroll in the [Developer Keynote at Dreamforce 13](http://www.youtube.com/watch?v=KELBWQIVcfk&list=PLScnZWsj0lrRCMuciE0La1_iKtCPt4Kka).
 
