@@ -83,7 +83,7 @@ https://na11.salesforce.com/reportbuilder/reportType.apexp#
 
 4. Add the following code into the **Visualforce Markup** tab.
 
-	````c
+	````html
 	<apex:component >
 		<apex:attribute name="reportId" description="ReportId" type="String" id="reportId"/>
 		<apex:attribute name="questionName" description="Question Name" type="String" id="questionName"/>
