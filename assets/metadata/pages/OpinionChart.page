@@ -1,7 +1,0 @@
-<apex:page standardController="Opinion__c"  showHeader="false" sidebar="false">
-  <meta name="viewport" content="width=device-width"/>
-
-  <!-- <c:surveyChart1 reportId="{!$CurrentPage.parameters.reportId}"></c:surveyChart1> -->
-  
-  <!-- <c:surveyChart1 reportId="00OE0000002BTpV"></c:surveyChart1> -->
-</apex:page>

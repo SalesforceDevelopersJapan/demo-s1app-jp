@@ -51,4 +51,27 @@ cd setup
 
 Your objects, layouts, application, pages and quick action should now exist in your org.
 
+#### Step 5: Import the data into your Developer Edition organization ####
+
+````bash
+cd demo-df13-devkeynote-s1app
+cd setup
+. importdata.sh
+````
+
+#### Step 6: Enable Chatter and Publisher Actions in your organization ####
+
+In this demo we will use Chatter and Publisher Actions. Consequently, we need to enable this functionality within the Developer Edition (DE) org.
+
+1. Log into Salesforce: [https://login.salesforce.com/](https://login.salesforce.com) using the same Developer Organization you used during the [setup]().
+
+2. Choose **Setup** | **App Setup** | **Customize** | **Chatter** | **Settings**.
+
+3. Click **Edit** then **Enable**.
+
+4. Under **Publisher Actions** click **Enable Publisher Actions** then click **Save**.
+
+You have now enabled Chatter and Publisher Actions for your org.
+
+
 

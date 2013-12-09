@@ -8,26 +8,97 @@
 <a name="technologies" />
 ### Key Technologies ###
 
-
+Publisher Actions
 
 
 
 <a name="demo" />
 ## Demo ##
 
+#### Step 1: Create your Report Types and Reports ####
 
-going to show you how you can easily start customizing and becoming a mobile app developer
+In this demo we will use reports within a Salesforce1 application. To create these custom reports, we must first create a custom report type from which we will create and customize our report.
+
+We will create a report that displays answers to our opinion questions.
+
+##### Create the custom Report Type #####
+
+1. Create a new Report Type. **Setup** | **Create** | **Report Types**. If prompted click **Continue**.
+
+2. Click **New Custom Report Type**.
+
+3. From the **Primary Object** select **Opinion Question Answers**.
+
+4. For **Report Type Label** enter **Opinion Question Answers**. The **Report Type Name** will autocomplete.
+
+5. For **Description** enter **Custom report type for opinion question answers**.
+
+6. From **Store in Category** select **Other Reports**.
+
+7. Choose **Deployed** from **Deployment Status**.
+
+8. Click **Next**.
+
+9. Click **Save**.
+
+##### Create the custom Report #####
+
+1. Click the **+** button on the menu near **Home** and **Opinions**.
+
+2. Click **Reports**.
+
+3. Click **New Report**.
+
+4. Under **Other Reports** select **Opinion Question Answers** and click **Create**.
+
+5. Change the report  from **Tabular** to **Matrix**.
+
+6. Drag **Opinion Question: Opinion Question Name** to the area that reads **Drop a field here to create a row grouping.**
+
+7. Drag **Answer** to the area that reads **Drop a field here to create a column grouping.**
+
+8. Click **Save**.
+
+9. Name the report **Answers**. The **Report Unique Name** will autocomplete.
+
+10. Run the report.
+
+10. Grab the **Report Id**. You can find this value in the browser URL. Copy this down to use later.
+
+![Report Id]() 
+
+We have now successfully created the Report Type and Report required for the rest of the demo.
+
+#### Step 2: Create your Visualforce Pages and Charts using the Analytics API ####
+https://na11.salesforce.com/reportbuilder/reportType.apexp#
 
 
-1. Log into Salesforce: [https://login.salesforce.com/](https://login.salesforce.com) using the same Developer Organization you used during the [setup]().
+#### Step 3: Add a Mobile Card to your Salesforce1 Application ####
 
-2. Select the **Opinionator** application from the upper-right dropdown menu and then choose the **Opinions** tab.
+
+
+
+#### Step 4: Add a Quick Action to your Salesforce1 Application ####
+
+
+
+#### Step 5: Compact Layout?
+
+
+
+
+
+
+
+
+
+3. Select the **Opinionator** application from the upper-right dropdown menu and then choose the **Opinions** tab.
 
 	![Opinionator App]()
 
 	![Opinions Tab]()
 
-3. Select the option **OP-0001**.
+3. Click **Go!** next to **View** | **All**. Select the option **OP-0000**.
 
 
 
