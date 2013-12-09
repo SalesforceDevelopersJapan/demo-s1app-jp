@@ -1,0 +1,57 @@
+<apex:component >
+ <apex:attribute name="reportId" description="ReportId" type="String" id="reportId"/>
+    <apex:includeScript value="//code.jquery.com/jquery.js"/>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.3/d3.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.0.0-beta/nv.d3.min.js"></script>
+    <apex:stylesheet value="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <apex:stylesheet value="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"/>
+    <apex:includeScript value="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"/>
+
+    <script>
+ $(document).ready(function(){
+    // Make sure you're using a MATRIX Report
+    $.ajax('/services/data/v29.0/analytics/reports/{!reportId}',
+        {
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+            },
+            success: function(response) {
+                console.log(response);
+                var chart = nv.models.multiBarChart();
+                var chartData = [];
+                $.each(response.groupingsDown.groupings, function(di, de) {
+                    var values = [];
+                    chartData.push({"key":de.label, "values": values});
+                    $.each(response.groupingsAcross.groupings, function(ai, ae) {
+                        values.push({"x": ae.label, "y": response.factMap[de.key+"!"+ae.key].aggregates[0].value});
+                    });
+                });
+                d3.select('#chart').datum(chartData).transition().duration(500).call(chart);
+            }
+        }
+    );
+});
+    function updateWindow(){
+        var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementById('chart'),
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    x = w.innerWidth || e.clientWidth || g.clientWidth;
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+    $("#chart").attr("width", x).attr("height", y);
+}
+window.onresize = updateWindow;
+    
+        
+</script>
+<div class="row">
+<div id="wrap" class="col-md-8">
+<svg id="chart" height="600px" width="400px"
+  preserveAspectRatio="xMidYMid"></svg>
+</div>
+</div>
+</apex:component>

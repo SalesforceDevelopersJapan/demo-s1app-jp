@@ -1,0 +1,8 @@
+
+<apex:page standardController="Opinion__c"  showHeader="false" sidebar="false">
+  <meta name="viewport" content="width=device-width"/>
+
+  <!-- <c:OpinionChartBar reportId="{!$CurrentPage.parameters.reportId}"></c:OpinionChartBar> -->
+  
+  <!-- <c:OpinionChartBar reportId="00OG00000054EQ1"></c:OpinionChartBar> -->
+</apex:page>
