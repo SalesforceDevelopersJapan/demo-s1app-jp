@@ -4,6 +4,7 @@
 <a name="overview" />
 ## Overview ##
 
+In this demo you will work with a custom application called **Opinionator**. **Opinionator** lets you track answers to questions you ask your customers. We will use this application to demonstrate how to build a Salesforce1 app using the key capabilities of the platform.
 
 <a name="technologies" />
 ### Key Technologies ###
