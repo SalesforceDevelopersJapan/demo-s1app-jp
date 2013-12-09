@@ -20,11 +20,15 @@ The following technologies are highlighted in this demo:
 <a name="sections" />
 ### Sections ###
 
+This demo is made of five sections:
+
 - [Section 1: Create your Report Types and Reports](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section1)
 - [Section 2: Create your Visualforce Pages and Charts using the Analytics API](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section2)
 - [Section 3: Add a Mobile Card to your Salesforce1 Application](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section3)
 - [Section 4: Add a Quick Action to your Salesforce1 Application](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section4)
 - [Section 5: Create a Compact Layout for the Opinion Question](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section5)
+
+It is recommended that you start with [Section 1](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section1) and proceed to the end.
 
 <a name="demo" />
 ## Demo ##
