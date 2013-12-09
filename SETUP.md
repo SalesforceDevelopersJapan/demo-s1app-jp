@@ -46,6 +46,7 @@ git clone https://github.com/developerforce/demo-df13-devkeynote-s1app.git
 ````bash
 cd demo-df13-devkeynote-s1app
 cd assets
+chmod 755 *.sh
 . importschema.sh
 ````
 
@@ -55,7 +56,7 @@ Your objects, layouts, application, pages and quick action should now exist in y
 
 ````bash
 cd demo-df13-devkeynote-s1app
-cd setup
+cd assets
 . importdata.sh
 ````
 
