@@ -218,7 +218,7 @@ We have now successfully created the Report Type and Report required for the res
 
 7. Click **Preview** to confirm your report runs correctly. You should see a chart similar to the following:
 
-	![Opinion Pie Chart]()
+	![Opinion Pie Chart Preview](https://f.cloud.github.com/assets/746259/1708981/655d14bc-6117-11e3-8f7b-c0915ac8362a.png)
 
 You have successfully created a Visualforce Component and Page.
 
@@ -236,7 +236,7 @@ Let's update the Opinion Question page layout to include a mobile card.
 
 4. Select **Visualforce Pages** from the **Opinion Question Layout** and drag it to the **Mobile Cards (Salesforce1 only) section. 
 
-	![Opinion Pie Chart in the Mobile Cards]()
+	![Opinion Pie Chart in the Mobile Cards](https://f.cloud.github.com/assets/746259/1709006/c469da3a-6117-11e3-9191-a0f5db4c5b25.png)
 
 5. Click **Save**.
 
@@ -248,8 +248,6 @@ Let's give it a try.
 
 2. Expand the menu in the upper-left, expand **Show More** and select the **Opinions** app.
 
-![Opinions]()
-
 3. Choose the **OP-0000** opinion.
 
 4. Swipe to the right (or click the right dot) and click on **Opinion Questions**.
@@ -258,7 +256,7 @@ Let's give it a try.
 
 6. Swipe to the right (or click the right dot). You will see the graph on the page.
 
-~[]()
+	![Chart in Mobile Client](https://f.cloud.github.com/assets/746259/1709024/1df57d66-6118-11e3-8d41-cc042a8b7d48.png)
 
 Let's make an additional update to display the question on the page.
 
@@ -266,19 +264,18 @@ Let's make an additional update to display the question on the page.
 
 2. Drag **Opinion** under the **OpinionChartPie** you recently added. Click **Save**.
 
-![Opinion]()
+	![Adding the Opinion under the Opinion Chart Page](https://f.cloud.github.com/assets/746259/1709061/7aa6f2ba-6118-11e3-85ba-4643af06af9c.png)
 
-3. Go back to your mobile Salesforce1 app. Refresh the page and return to the chart. You now see the **Opinion** information below the chart.
 
-![Opinion with detail]()
+3. Go back to your mobile Salesforce1 app. Refresh the page and return to the chart. You now see the **Opinion Question** information below the chart.
+
+	![Opinion Chart with Opinion Question](https://f.cloud.github.com/assets/746259/1709078/bd5ce272-6118-11e3-8473-9c88f9d0281f.png)
 
 Congratulations. You have added a mobile card to your Salesforce1 application.
 
 #### Step 4: Add a Quick Action to your Salesforce1 Application ####
 
-
-
-1. **Setup** | **Create** | **Objects**.
+----1. **Setup** | **Create** | **Objects**.
 
 2. Select **Opinion Question** from the list.
 
@@ -292,7 +289,7 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 
 7. From the **Opinion Question Fields** drag **Deactivation Reason** to the page.
 
-![Deactivation Reason]()
+	![Deactivation Reason](https://f.cloud.github.com/assets/746259/1709108/1faddd3c-6119-11e3-8b60-c84cbd7821fc.png)
 
 8. Click **Save**.
 
@@ -312,7 +309,7 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 
 16. Drag the **Deactivate Question** to the front of the **Publisher Actions** list.
 
-![]()
+	![Deactivation Reason in Pulisher Actions list](https://f.cloud.github.com/assets/746259/1709130/6b5eb4ae-6119-11e3-92ec-b71f250bb264.png)
 
 17. Click **Save**.
 
@@ -330,13 +327,13 @@ Let's try it out.
 
 6. Click the **Quick Actions** button in the lower right-hand corner of the screen. It is a blue box with a + in the middle.
 
-![]()
+	![deactivatequestionactionlist](https://f.cloud.github.com/assets/746259/1709135/9ad5657a-6119-11e3-8631-a7ccd4958d9f.png)
 
 7. Click **Deactivate Question**.
 
 8. Select **Boss Told Me To** from the **Deactivation Reason** list.
 
-![]()
+	![Select Deactivation Reason](https://f.cloud.github.com/assets/746259/1709147/c070bdd4-6119-11e3-8917-9f08b9003f41.png)
 
 9. Click **Submit**.
 
