@@ -1,10 +1,9 @@
 # Dreamforce 13 Dev Keynote Salesforce1 App Demo #
 
-Demos are sets of step-by-step guides that are designed to help you learn how to use key capabilities of the Salesforce platform. Each demo provides instructions that guide you through the process of developing an application.
+Demos are sets of step-by-step guides designed to help you learn to use key capabilities of the Salesforce platform. Each demo provides instructions that guide you through the process of developing an application.
 
 In this demo, you will ...
 
-revise: This is the metadata for setting up your developer edition to run the Opinionator app. Please make sure you have installed the Force CLI first.
 
 ### Repository Structure ###
 
@@ -13,6 +12,8 @@ This demo has the following repository structure:
 - **root**: In the **root** folder of this repository you will find the script for this demo, **DEMO.md**. Before starting the demo, make sure you have followed all the required steps indicated in the **SETUP.md**.
 
 - **assets**: In the **assets** folder you will find all the dependencies required for this demo. The **SETUP.md** file provides you with instructions on how to use this content.
+
+- **src**: In the **src** folder you will find source code used in this demo. The **DEMO.md** file provides you with instructions on how to use these files.
 
 ### Contributing to the Repository ###
 

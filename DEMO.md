@@ -8,9 +8,13 @@
 <a name="technologies" />
 ### Key Technologies ###
 
-Publisher Actions
+The following technologies are highlighted in this demo:
 
-
+- Force Command-line Interface (CLI)
+- Report Types & Reports
+- Salesforce1 Apps
+- Mobile Cards
+- Publisher Actions (Quick Actions)
 
 <a name="demo" />
 ## Demo ##
