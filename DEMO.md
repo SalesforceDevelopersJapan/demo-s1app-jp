@@ -91,7 +91,7 @@ We have now successfully created the Report Type and Report required for the res
 <a name="section2" />
 #### Section 2: Create your Visualforce Pages and Charts using the Analytics API ####
 
-##### Create the component #####
+##### Create the Visualforce Component #####
 
 1. Create a new **Component**. **Setup** | **Develop** | **Components**.
 
@@ -99,7 +99,7 @@ We have now successfully created the Report Type and Report required for the res
 
 3. For **Label** enter **OpinionChartPie**. The **Name** will autocomplete.
 
-4. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src* folder in the file **OpinionChartPie.component**.
+4. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src** folder in the file **OpinionChartPie.component**.
 
 	````html
 	<apex:component >
@@ -206,7 +206,7 @@ We have now successfully created the Report Type and Report required for the res
 
 5. Click **Save**.
 
-##### Create the Visualforce page #####
+##### Create the Visualforce Page #####
 
 1. Create a new **Visualforce page**. **Setup** | **Develop** | **Pages**.
 
@@ -218,7 +218,7 @@ We have now successfully created the Report Type and Report required for the res
 
 5. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src* folder in the file **OpinionChartPie.page**.
 
-	Note: replace **YOURREPORTID** with the Report Id you captured in the last section.
+	**Note**: replace **YOURREPORTID** with the Report Id you captured in the last section.
 
 	````html
 	<apex:page cache="false"
@@ -263,7 +263,7 @@ Let's give it a try.
 
 1. In a new tab on your browser enter the following url: [https://na11.salesforce.com/one/one.app](https://na11.salesforce.com/) to login to the Salesforce1 web client.
 
-	Note: this client is designed for a mobile screen. You may want to reduce the size of your browser window to make this look more appropriate. Alternatively, you can use a mobile simulator/emulator to login or download the application from the Apple Store or Google Play.
+	**Note**: this client is designed for a mobile screen. You may want to reduce the size of your browser window to make this look more appropriate. Alternatively, you can use a mobile simulator/emulator to login or download the application from the Apple Store or Google Play.
 
 2. Expand the menu in the upper-left, expand **Show More** and select the **Opinions** app.
 
@@ -295,7 +295,7 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 <a name="section4" />
 #### Section 4: Add a Quick Action to your Salesforce1 Application ####
 
-1. **Setup** | **Create** | **Objects**.
+1. Click **Setup** | **Create** | **Objects**.
 
 2. Select **Opinion Question** from the list.
 
@@ -333,7 +333,7 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 
 17. Click **Save**.
 
-Let's try it out.
+Let's try it out and see it in action!
 
 1. Return to the mobile application. Make sure you've refreshed the application.
 
@@ -360,7 +360,7 @@ Let's try it out.
 <a name="section5" />
 #### Section 5: Create a Compact Layout for the Opinion Question ####
 
-1. **Setup** | **Create** | **Objects**.
+1. Click **Setup** | **Create** | **Objects**.
 
 2. Select **Opinion Question** from the list.
 
@@ -376,7 +376,7 @@ Let's try it out.
 
 8. Return to the mobile application. Make sure you've refreshed the application.
 
-	Note: Salesforce aggressively caches pages. You may have to clear your browser history or close the browser/emulator to see the updated view.
+	**Note**: Salesforce aggressively caches pages. You may have to clear your browser history or close the browser/emulator to see the updated view.
 
 9. You will now see an updated mobile view based on the compact view you just created.
 
