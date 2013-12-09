@@ -226,9 +226,9 @@ You have successfully created a Visualforce Component and Page.
 #### Step 3: Add a Mobile Card to your Salesforce1 Application ####
 
 
+Let's update the Opinion Question page layout to include a mobile card.
 
-
-1. Let's update the Opinion Question page layout. **Setup** | **Create** | **Objects**.
+1. Select the **Opinion Question** page layout. **Setup** | **Create** | **Objects**.
 
 2. Select **Opinion Question** from the list.
 
@@ -277,6 +277,47 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 #### Step 4: Add a Quick Action to your Salesforce1 Application ####
 
 
+
+1. **Setup** | **Create** | **Objects**.
+
+2. Select **Opinion Question** from the list.
+
+3. Under the **Buttons, Links, and Actions** section click **New Action**.
+
+4. Select **Update a Record** from the **Action Type**.
+
+5. For **Label** enter **Deactivate Question**. The **Name** will autocomplete.
+
+6. Click **Save**.
+
+7. From the **Opinion Question Fields** drag **Deactivation Reason** to the page.
+
+![Deactivation Reason]()
+
+8. Click **Save**.
+
+9. Click **New** under **Predefined Field Values**.
+
+10. Select **Is Active** from the **Field Name**.
+
+11. In the formula editor enter "False" under the **Specify New Field Value**.
+
+12. Click **Save**.
+
+Let's try it out.
+
+1. Return to the mobile application. Make sure you've refreshed the application.
+
+
+2. Expand the menu in the upper-left, expand **Show More** and select the **Opinions** app.
+
+3. Choose the **OP-0000** opinion.
+
+4. Swipe to the right (or click the right dot) and click on **Opinion Questions**.
+
+5. Choose the **OQ-0001** question.
+
+... need to complete when working
 
 #### Step 5: Compact Layout?
 
