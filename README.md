@@ -9,6 +9,7 @@ In this demo, you will use an application called **Opinionator** to learn about 
 - Report Types and Reports
 - Mobile Cards
 - Publisher Actions (Quick Actions)
+- Compact Views
 
 To get started, review the instructions below.
 

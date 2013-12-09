@@ -15,6 +15,7 @@ The following technologies are highlighted in this demo:
 - Salesforce1 Apps
 - Mobile Cards
 - Publisher Actions (Quick Actions)
+- Compact Views
 
 <a name="demo" />
 ## Demo ##
@@ -279,7 +280,7 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 
 #### Step 4: Add a Quick Action to your Salesforce1 Application ####
 
-----1. **Setup** | **Create** | **Objects**.
+1. **Setup** | **Create** | **Objects**.
 
 2. Select **Opinion Question** from the list.
 
@@ -341,17 +342,32 @@ Let's try it out.
 
 9. Click **Submit**.
 
+#### Step 5: Create a Compact Layout for the Opinion Question ####
 
 
 
 
+1. **Setup** | **Create** | **Objects**.
 
+2. Select **Opinion Question** from the list.
 
+3. Under **Compact Layouts** click **New**.
 
+4. For **Label** enter **Custom Compact Layout**. The **Name** will autocomplete.
 
+5. Choose the following fields to add in this order: **Opinion Question Name**, **Question**, **Is Active**, and **Deactivation Reason**.
 
+6. Click **Save**.
 
+7. Click **Compact Layout Assignment** and **Edit Assignment**. Select **Custom Compact Layout** from the list and click **Save**.
 
+8. Return to the mobile application. Make sure you've refreshed the application.
+
+	Note: Salesforce aggressively caches pages. You may have to clear your browser history or close the browser/emulator to see the updated view.
+
+9. You will now see an updated mobile view based on the compact view you just created.
+
+Congratulations! You have successfully completed this demo application.
 
 
 
