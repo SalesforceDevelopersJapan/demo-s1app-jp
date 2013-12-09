@@ -65,15 +65,11 @@ We will create a report that displays answers to our opinion questions.
 
 10. Grab the **Report Id**. You can find this value in the browser URL. Copy this down to use later.
 
-![Report Id]() 
+	![Report Id]() 
 
 We have now successfully created the Report Type and Report required for the rest of the demo.
 
 #### Step 2: Create your Visualforce Pages and Charts using the Analytics API ####
-https://na11.salesforce.com/reportbuilder/reportType.apexp#
-
-
-#### Step 3: Add a Mobile Card to your Salesforce1 Application ####
 
 ##### Create the component #####
 
@@ -198,7 +194,9 @@ https://na11.salesforce.com/reportbuilder/reportType.apexp#
 
 3. For **Label** enter **OpinionChartPie**. The **Name** will autocomplete.
 
-4. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src* folder in the file **OpinionChartPie.page**.
+4. Check the box next to **Available for Salesforce mobile apps**.
+
+5. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src* folder in the file **OpinionChartPie.page**.
 
 	Note: replace **YOURREPORTID** with the Report Id you captured in the last section.
 
@@ -216,11 +214,65 @@ https://na11.salesforce.com/reportbuilder/reportType.apexp#
 	</apex:page>
 	`````
 
-5. Click **Preview** to confirm your report runs correctly. You should see a chart similar to the following:
+6. Click **Save**.
 
-![Opinion Pie Chart]()
+7. Click **Preview** to confirm your report runs correctly. You should see a chart similar to the following:
+
+	![Opinion Pie Chart]()
 
 You have successfully created a Visualforce Component and Page.
+
+
+#### Step 3: Add a Mobile Card to your Salesforce1 Application ####
+
+
+
+
+1. Let's update the Opinion Question page layout. **Setup** | **Create** | **Objects**.
+
+2. Select **Opinion Question** from the list.
+
+3. Under the **Page Layouts** section click **Edit** next to the **Opinion Question Layout**.
+
+4. Select **Visualforce Pages** from the **Opinion Question Layout** and drag it to the **Mobile Cards (Salesforce1 only) section. 
+
+	![Opinion Pie Chart in the Mobile Cards]()
+
+5. Click **Save**.
+
+Let's give it a try.
+
+1. In a new tab on your browser enter the following url: [https://na11.salesforce.com/one/one.app](https://na11.salesforce.com/) to login to the Salesforce1 web client.
+
+	Note: this client is designed for a mobile screen. You may want to reduce the size of your browser window to make this look more appropriate. Alternatively, you can use a mobile simulator/emulator to login or download the application from the Apple Store or Google Play.
+
+2. Expand the menu in the upper-left, expand **Show More** and select the **Opinions** app.
+
+![Opinions]()
+
+3. Choose the **OP-0000** opinion.
+
+4. Swipe to the right (or click the right dot) and click on **Opinion Questions**.
+
+5. Choose the **OQ-0000** question.
+
+6. Swipe to the right (or click the right dot). You will see the graph on the page.
+
+~[]()
+
+Let's make an additional update to display the question on the page.
+
+1. On the **Opinion Question Layout** select **Expanded Lookups**.
+
+2. Drag **Opinion** under the **OpinionChartPie** you recently added. Click **Save**.
+
+![Opinion]()
+
+3. Go back to your mobile Salesforce1 app. Refresh the page and return to the chart. You now see the **Opinion** information below the chart.
+
+![Opinion with detail]()
+
+Congratulations. You have added a mobile card to your Salesforce1 application.
 
 #### Step 4: Add a Quick Action to your Salesforce1 Application ####
 
@@ -234,15 +286,6 @@ You have successfully created a Visualforce Component and Page.
 
 
 
-
-
-3. Select the **Opinionator** application from the upper-right dropdown menu and then choose the **Opinions** tab.
-
-	![Opinionator App]()
-
-	![Opinions Tab]()
-
-3. Click **Go!** next to **View** | **All**. Select the option **OP-0000**.
 
 
 
