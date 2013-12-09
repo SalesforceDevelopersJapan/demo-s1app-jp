@@ -1,4 +1,4 @@
-# DF13 Dev Keynote Salesforce1 App #
+# Dreamforce 13 Developer Keynote - Salesforce1 App Demo Setup #
 
 <a name="setup-and-configuration" />
 ## Setup and Configuration ##
@@ -71,7 +71,11 @@ In this demo we will use Chatter and Publisher Actions. Consequently, we need to
 
 4. Under **Publisher Actions** click **Enable Publisher Actions** then click **Save**.
 
-You have now enabled Chatter and Publisher Actions for your org.
+5. Choose **Setup** | **App Setup** | **Customize** | **Chatter** | **Feed Tracking**.
+
+6. Select **Opinion**, **Opinion Question**, and **Opinion Answer** in turn and **Enable Feed Tracking**. Be sure to click **Save**.
+
+You have now enabled Chatter and Publisher Actions for your org and enabled Chatter feeds on your custom objects.
 
 
 
