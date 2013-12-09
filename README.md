@@ -1,9 +1,16 @@
-# Dreamforce 13 Dev Keynote Salesforce1 App Demo #
+# Dreamforce 13 Developer Keynote - Salesforce1 App Demo #
 
 Demos are sets of step-by-step guides designed to help you learn to use key capabilities of the Salesforce platform. Each demo provides instructions that guide you through the process of developing an application.
 
-In this demo, you will ...
+In this demo, you will use an application called **Opinionator** to learn about some of the key components of the Salesforce1 platform, including:
 
+- Force Command-line Interface (CLI)
+- Mobile Visualforce Components & Pages
+- Report Types and Reports
+- Mobile Cards
+- Publisher Actions (Quick Actions)
+
+To get started, review the instructions below.
 
 ### Repository Structure ###
 
