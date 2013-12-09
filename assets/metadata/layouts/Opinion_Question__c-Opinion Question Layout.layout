@@ -84,17 +84,6 @@
             <quickActionName>FeedItem.MobileSmartActions</quickActionName>
         </quickActionListItems>
     </quickActionList>
-    <relatedContent>
-        <relatedContentItems>
-            <layoutItem>
-                <height>200</height>
-                <page>OpinionChartPage</page>
-                <showLabel>false</showLabel>
-                <showScrollbars>false</showScrollbars>
-                <width>100%</width>
-            </layoutItem>
-        </relatedContentItems>
-    </relatedContent>
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Opinion_Question_Answer__c.Opinion_Question__c</relatedList>

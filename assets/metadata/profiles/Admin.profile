@@ -220,10 +220,6 @@
         <field>Opportunity.TrackingNumber__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <pageAccesses>
-        <apexPage>OpinionChartPage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
     <tabVisibilities>
         <tab>Opinion__c</tab>
         <visibility>DefaultOn</visibility>

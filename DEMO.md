@@ -75,6 +75,118 @@ https://na11.salesforce.com/reportbuilder/reportType.apexp#
 
 #### Step 3: Add a Mobile Card to your Salesforce1 Application ####
 
+1. Create a new **Component**. **Setup** | **Develop** | **Components**.
+
+2. Click **New**.
+
+3. For **Label** enter **OpinionChartPie**. The **Name** will autocomplete.
+
+4. Add the following code into the **Visualforce Markup** tab.
+
+````c
+<apex:component >
+	<apex:attribute name="reportId" description="ReportId" type="String" id="reportId"/>
+	<apex:attribute name="questionName" description="Question Name" type="String" id="questionName"/>
+    <apex:includeScript value="//code.jquery.com/jquery.js"/>
+    <!--
+	<apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+    -->
+    <apex:includeScript value="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.9/d3.min.js" />
+    <apex:includeScript value="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.13-beta/nv.d3.min.js"/>
+    
+    <apex:stylesheet value="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <apex:stylesheet value="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"/>
+    <apex:includeScript value="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"/>
+
+    <script>
+     var myChart;
+     var chart;
+     var that = {}
+ $(document).ready(function(){
+	
+    $.ajax('/services/data/v29.0/analytics/reports/{!reportId}',
+        {
+            type: "POST",
+            data:{
+			    "reportMetadata": {
+	        	    "reportFilters": [
+    	        	{
+        	        	"value": "{!questionName}",
+	            	    "operator": "equal",
+    	            	"column": "072E0000002ec1f"
+        	    	}]
+                }
+            },
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer {!$Api.Session_ID}');
+            },
+            success: function(response) {
+                /* Format the data */
+                that.simpleData = []
+                $.each(response.groupingsDown.groupings, function(di, de) {
+                    $.each(response.groupingsAcross.groupings, function(ai, ae) {
+                        that.simpleData.push({"key": ae.label, "y": response.factMap[de.key+"!"+ae.key].aggregates[0].value});
+                    });
+                });
+
+                /* Chart */
+                 mychart = nv.addGraph(function() {
+                     var windowBox = getWindowBox();
+                    var width = windowBox.width,
+                	    height = windowBox.height;
+                
+                    chart = nv.models.pieChart()
+                        .x(function(d) { return d.key })
+                        .y(function(d) { return d.y })
+                        .color(d3.scale.category10().range())
+                        .width(width)
+                        .height(height);
+               
+                    d3.select("#chart1")
+                        .datum(that.simpleData)
+                        .transition()
+                        .duration(1200)
+                        .attr('width', width)
+                        .attr('height', height)
+						.attr("viewBox", "0, 0, " + width + ", " + height)
+						.attr("preserveAspectRatio", "xMinYMin")
+                        .call(chart);
+                
+                    chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+                    nv.utils.windowResize(chart.update);
+                    return chart;
+                });
+            }
+        }
+    );
+});
+
+	function getWindowBox(){
+        var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementById('chart'),
+        x = w.innerWidth || e.clientWidth || g.clientWidth,
+        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+        x = w.innerWidth || e.clientWidth || g.clientWidth;
+        y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+        return { width:x, height:y };
+    }
+	function updateWindow() {
+        var box = getWindowBox();
+        $("#chart1").attr("width", box.width).attr("height", box.height);
+    }
+    window.onresize = updateWindow;
+    
+        
+</script>
+<div class="row">
+    <svg id="chart1"></svg>
+</div>
+</apex:component>
+````
+
+5. Click **Save**.
 
 
 
