@@ -65,7 +65,7 @@
         <fields>NAME</fields>
         <fields>Status__c</fields>
         <fields>Deactivation_Reason__c</fields>
-        <relatedList>Opinion_Question__c.Opinion_del__c</relatedList>
+        <relatedList>Opinion_Question__c.Opinion__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

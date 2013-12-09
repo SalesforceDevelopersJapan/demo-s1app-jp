@@ -1,0 +1,95 @@
+// opinion
+Opinion__c newOpinion = new Opinion__c();
+
+newOpinion.Name__c = 'OP-0001';
+newOpinion.Description__c = 'Preferred Roast Opinions';
+
+insert newOpinion;
+
+// question
+Opinion_Question__c newOpinionQuestion = new Opinion_Question__c();
+
+newOpinionQuestion.Is_Active__c = true;
+newOpinionQuestion.Opinion__c = newOpinion.Id;
+newOpinionQuestion.Question__c = 'I prefer a dark roast.';
+
+insert newOpinionQuestion;
+
+// question responses
+Opinion_Question_Response__c newOpinionQuestionResponse = new Opinion_Question_Response__c();
+
+newOpinionQuestionResponse.Response_Option__c = 'Yes';
+newOpinionQuestionResponse.Opinion_Question__c = newOpinionQuestion.Id;
+
+insert newOpinionQuestionResponse;
+
+newOpinionQuestionResponse = new Opinion_Question_Response__c();
+
+newOpinionQuestionResponse.Response_Option__c = 'No';
+newOpinionQuestionResponse.Opinion_Question__c = newOpinionQuestion.Id;
+
+insert newOpinionQuestionResponse;
+
+// question answers
+Opinion_Question_Answer__c newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'Yes';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'Yes';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'Yes';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'Yes';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'Yes';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'No';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'No';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'No';
+
+insert newOpinionQuestionAnswer;
+
+newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
+
+newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
+newOpinionQuestionAnswer.Answer__c = 'No';
+
+insert newOpinionQuestionAnswer;

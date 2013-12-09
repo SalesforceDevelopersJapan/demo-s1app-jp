@@ -94,7 +94,7 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Opinion_del__c</fullName>
+        <fullName>Opinion__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Opinion</label>

@@ -132,7 +132,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opinion_Question__c.Opinion_del__c</field>
+        <field>Opinion_Question__c.Opinion__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
