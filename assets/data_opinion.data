@@ -93,3 +93,12 @@ newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
 newOpinionQuestionAnswer.Answer__c = 'No';
 
 insert newOpinionQuestionAnswer;
+
+// add a second question
+newOpinionQuestion = new Opinion_Question__c();
+
+newOpinionQuestion.Is_Active__c = true;
+newOpinionQuestion.Opinion__c = newOpinion.Id;
+newOpinionQuestion.Question__c = 'I prefer whole beans.';
+
+insert newOpinionQuestion;

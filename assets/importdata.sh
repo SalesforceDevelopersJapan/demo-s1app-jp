@@ -7,7 +7,7 @@ force login
 echo "Step 2: Starting the data import process using the Force CLI tool."
 echo ""
 
-force apex < data_opinion
+force apex < data_opinion.data
 
 echo ""
 echo "The import process has completed."

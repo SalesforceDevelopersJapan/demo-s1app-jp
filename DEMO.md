@@ -304,10 +304,21 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 
 12. Click **Save**.
 
+13. Under the **Page Layouts** section click **Edit** next to the **Opinion Question Layout**.
+
+14. Click the link **override the global publisher layout** under **Publisher Actions**.
+
+15. Select **Actions** under the **Opinion Question Layout**.
+
+16. Drag the **Deactivate Question** to the front of the **Publisher Actions** list.
+
+![]()
+
+17. Click **Save**.
+
 Let's try it out.
 
 1. Return to the mobile application. Make sure you've refreshed the application.
-
 
 2. Expand the menu in the upper-left, expand **Show More** and select the **Opinions** app.
 
@@ -317,9 +328,22 @@ Let's try it out.
 
 5. Choose the **OQ-0001** question.
 
-... need to complete when working
+6. Click the **Quick Actions** button in the lower right-hand corner of the screen. It is a blue box with a + in the middle.
 
-#### Step 5: Compact Layout?
+![]()
+
+7. Click **Deactivate Question**.
+
+8. Select **Boss Told Me To** from the **Deactivation Reason** list.
+
+![]()
+
+9. Click **Submit**.
+
+
+
+
+
 
 
 
