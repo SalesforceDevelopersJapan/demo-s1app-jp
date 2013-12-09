@@ -17,10 +17,20 @@ The following technologies are highlighted in this demo:
 - Publisher Actions (Quick Actions)
 - Compact Views
 
+<a name="sections" />
+### Sections ###
+
+- [Section 1: Create your Report Types and Reports](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section1)
+- [Section 2: Create your Visualforce Pages and Charts using the Analytics API](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section2)
+- [Section 3: Add a Mobile Card to your Salesforce1 Application](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section3)
+- [Section 4: Add a Quick Action to your Salesforce1 Application](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section4)
+- [Section 5: Create a Compact Layout for the Opinion Question](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section5)
+
 <a name="demo" />
 ## Demo ##
 
-#### Step 1: Create your Report Types and Reports ####
+<a name="section1" />
+#### Section 1: Create your Report Types and Reports ####
 
 In this demo we will use reports within a Salesforce1 application. To create these custom reports, we must first create a custom report type from which we will create and customize our report.
 
@@ -74,7 +84,8 @@ We will create a report that displays answers to our opinion questions.
 
 We have now successfully created the Report Type and Report required for the rest of the demo.
 
-#### Step 2: Create your Visualforce Pages and Charts using the Analytics API ####
+<a name="section2" />
+#### Section 2: Create your Visualforce Pages and Charts using the Analytics API ####
 
 ##### Create the component #####
 
@@ -227,9 +238,8 @@ We have now successfully created the Report Type and Report required for the res
 
 You have successfully created a Visualforce Component and Page.
 
-
-#### Step 3: Add a Mobile Card to your Salesforce1 Application ####
-
+<a name="section3" />
+#### Section 3: Add a Mobile Card to your Salesforce1 Application ####
 
 Let's update the Opinion Question page layout to include a mobile card.
 
@@ -278,7 +288,8 @@ Let's make an additional update to display the question on the page.
 
 Congratulations. You have added a mobile card to your Salesforce1 application.
 
-#### Step 4: Add a Quick Action to your Salesforce1 Application ####
+<a name="section4" />
+#### Section 4: Add a Quick Action to your Salesforce1 Application ####
 
 1. **Setup** | **Create** | **Objects**.
 
@@ -342,10 +353,8 @@ Let's try it out.
 
 9. Click **Submit**.
 
-#### Step 5: Create a Compact Layout for the Opinion Question ####
-
-
-
+<a name="section5" />
+#### Section 5: Create a Compact Layout for the Opinion Question ####
 
 1. **Setup** | **Create** | **Objects**.
 
