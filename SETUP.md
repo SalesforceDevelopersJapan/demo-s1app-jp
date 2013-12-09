@@ -77,5 +77,5 @@ In this demo we will use Chatter and Publisher Actions. Consequently, we need to
 
 You have now enabled Chatter and Publisher Actions for your org and enabled Chatter feeds on your custom objects.
 
-
+You are now ready to [start the demo](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md).
 
