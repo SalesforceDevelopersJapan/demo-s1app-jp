@@ -45,7 +45,7 @@ git clone https://github.com/developerforce/demo-df13-devkeynote-s1app.git
 
 ````bash
 cd demo-df13-devkeynote-s1app
-cd setup
+cd assets
 . importschema.sh
 ````
 
