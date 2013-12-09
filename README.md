@@ -12,6 +12,8 @@ In this demo, you will use an application called **Opinionator** to learn about 
 
 To get started, review the instructions below.
 
+To see these demos in action please watch Dave Carroll in the [Developer Keynote at Dreamforce 13](http://www.youtube.com/watch?v=KELBWQIVcfk&list=PLScnZWsj0lrRCMuciE0La1_iKtCPt4Kka).
+
 ### Repository Structure ###
 
 This demo has the following repository structure:
