@@ -75,13 +75,15 @@ https://na11.salesforce.com/reportbuilder/reportType.apexp#
 
 #### Step 3: Add a Mobile Card to your Salesforce1 Application ####
 
+##### Create the component #####
+
 1. Create a new **Component**. **Setup** | **Develop** | **Components**.
 
 2. Click **New**.
 
 3. For **Label** enter **OpinionChartPie**. The **Name** will autocomplete.
 
-4. Add the following code into the **Visualforce Markup** tab.
+4. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src* folder in the file **OpinionChartPie.component**.
 
 	````html
 	<apex:component >
@@ -188,7 +190,37 @@ https://na11.salesforce.com/reportbuilder/reportType.apexp#
 
 5. Click **Save**.
 
+##### Create the Visualforce page #####
 
+1. Create a new **Visualforce page**. **Setup** | **Develop** | **Pages**.
+
+2. Click **New**.
+
+3. For **Label** enter **OpinionChartPie**. The **Name** will autocomplete.
+
+4. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src* folder in the file **OpinionChartPie.page**.
+
+	Note: replace **YOURREPORTID** with the Report Id you captured in the last section.
+
+	````html
+	<apex:page cache="false"
+	    standardController="Opinion_Question__c"
+	    standardStylesheets="false"
+	    showHeader="false"
+	    sidebar="false">
+	        
+	  <meta name="viewport" content="width=device-width"/>
+	  <c:OpinionChartPie questionName="{!Opinion_Question__c.Name}" reportId="YOURREPORTID">
+	  </c:OpinionChartPie>
+
+	</apex:page>
+	`````
+
+5. Click **Preview** to confirm your report runs correctly. You should see a chart similar to the following:
+
+![Opinion Pie Chart]()
+
+You have successfully created a Visualforce Component and Page.
 
 #### Step 4: Add a Quick Action to your Salesforce1 Application ####
 

@@ -5,8 +5,7 @@
     sidebar="false">
         
   <meta name="viewport" content="width=device-width"/>
-  <!--
-  <c:OpinionChartPie questionName="{!Opinion_Question__c.Name}" reportId="00OG00000054EQ1">
+  <c:OpinionChartPie questionName="{!Opinion_Question__c.Name}" reportId="YOURREPORTID">
   </c:OpinionChartPie>
-  -->
+
 </apex:page>
