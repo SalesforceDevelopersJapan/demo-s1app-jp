@@ -374,7 +374,7 @@ Let's try it out and see it in action!
 
 7. Click **Compact Layout Assignment** and **Edit Assignment**. Select **Custom Compact Layout** from the list and click **Save**.
 
-8. Return to the mobile application. Make sure you've refreshed the application.
+8. Return to the **Opinion Question** page in the mobile application. Make sure you've refreshed the application.
 
 	**Note**: Salesforce aggressively caches pages. You may have to clear your browser history or close the browser/emulator to see the updated view.
 
