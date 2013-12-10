@@ -253,7 +253,7 @@ Let's update the Opinion Question page layout to include a mobile card.
 
 3. Under the **Page Layouts** section click **Edit** next to the **Opinion Question Layout**.
 
-4. Select **Visualforce Pages** from the **Opinion Question Layout** and drag **OpinionChartPie** to the **Mobile Cards (Salesforce1 only) section. 
+4. Select **Visualforce Pages** from the **Opinion Question Layout** and drag **OpinionChartPie** to the **Mobile Cards (Salesforce1 only)** section. 
 
 	![Opinion Pie Chart in the Mobile Cards](https://f.cloud.github.com/assets/746259/1709006/c469da3a-6117-11e3-9191-a0f5db4c5b25.png)
 
