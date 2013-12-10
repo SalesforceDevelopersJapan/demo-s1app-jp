@@ -50,7 +50,7 @@ chmod 755 *.sh
 . importschema.sh
 ````
 
-Your objects, layouts, application, pages and quick action should now exist in your org.
+The demo application, layouts, and objects now exist in your org.
 
 #### Step 5: Import the data into your Developer Edition organization ####
 

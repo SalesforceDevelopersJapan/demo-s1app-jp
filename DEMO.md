@@ -42,7 +42,9 @@ We will create a report that displays answers to our opinion questions.
 
 ##### Create the custom Report Type #####
 
-1. Create a new Report Type. **Setup** | **Create** | **Report Types**. If prompted click **Continue**.
+Create a new custom Report Type.
+
+1. Click **Setup** | **Create** | **Report Types**. If prompted click **Continue**.
 
 2. Click **New Custom Report Type**.
 
@@ -60,17 +62,17 @@ We will create a report that displays answers to our opinion questions.
 
 9. Click **Save**.
 
-##### Create the custom Report #####
+##### Create the Custom Report #####
 
 1. Click the **+** button on the menu near **Home** and **Opinions**.
 
-2. Click **Reports**.
+2. Click **Reports**. Click **No Thanks** if prompted.
 
 3. Click **New Report**.
 
-4. Under **Other Reports** select **Opinion Question Answers** and click **Create**.
+4. Expand **Other Reports** and select **Opinion Question Answers** and click **Create**. Click **No Thanks** if prompted.
 
-5. Change the report  from **Tabular** to **Matrix**.
+5. Change the report from **Tabular** to **Matrix**.
 
 6. Drag **Opinion Question: Opinion Question Name** to the area that reads **Drop a field here to create a row grouping.**
 
@@ -80,7 +82,7 @@ We will create a report that displays answers to our opinion questions.
 
 9. Name the report **Answers**. The **Report Unique Name** will autocomplete.
 
-10. Run the report.
+10. Click **Save and Run Report**.
 
 10. Grab the **Report Id**. You can find this value in the browser URL. Copy this down to use later.
 
@@ -93,7 +95,9 @@ We have now successfully created the Report Type and Report required for the res
 
 ##### Create the Visualforce Component #####
 
-1. Create a new **Component**. **Setup** | **Develop** | **Components**.
+Create a new Visualforce Component.
+
+1. Click **Setup** | **Develop** | **Components**.
 
 2. Click **New**.
 
@@ -208,7 +212,9 @@ We have now successfully created the Report Type and Report required for the res
 
 ##### Create the Visualforce Page #####
 
-1. Create a new **Visualforce page**. **Setup** | **Develop** | **Pages**.
+Create a new Visualforce Page.
+
+1. Click **Setup** | **Develop** | **Pages**.
 
 2. Click **New**.
 
