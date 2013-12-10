@@ -333,7 +333,9 @@ Congratulations. You have added a mobile card to your Salesforce1 application.
 
 15. Select **Actions** under the **Opinion Question Layout**.
 
-16. Drag the **Deactivate Question** to the front of the **Publisher Actions** list. Note: You may see a message in the **Publisher Actions** section regarding actions being inherited from the global publisher layout, simply click the **override the global publisher layout** link to enable.
+16. Drag the **Deactivate Question** to the front of the **Publisher Actions** list.
+
+	**Note**: You may see a message in the **Publisher Actions** section regarding actions being inherited from the global publisher layout, simply click the **override the global publisher layout** link to enable.
 
 	![Deactivation Reason in Pulisher Actions list](https://f.cloud.github.com/assets/746259/1709130/6b5eb4ae-6119-11e3-92ec-b71f250bb264.png)
 
