@@ -1,109 +1,111 @@
-# Dreamforce 13 Developer Keynote - Salesforce1 App Demo #
+# Salesforce1 サンプルアプリケーション #
 
 <a name="overview" />
-## Overview ##
+## オーバービュー ##
 
-In this demo you will work with a custom application called **Opinionator**. **Opinionator** lets you track answers to questions you ask your customers. We will use this application to demonstrate how to build a Salesforce1 app using the key capabilities of the platform.
+このデモアプリケーションでは、**意識調査**というカスタムアプリケーションを利用します。 **意識調査** では、顧客に提示した質問についての回答をトラックングする事が可能です。このアプリケーションを利用して、Salesforce1アプリケーションの機能について学んでいきます。
 
 <a name="technologies" />
-### Key Technologies ###
+### キーとなるテクノロジー ###
 
-The following technologies are highlighted in this demo:
+以下のテクノロジーをこのデモアプリケーションでは使用しています:
 
 - Force Command-line Interface (CLI)
-- Report Types & Reports
-- Salesforce1 Apps
-- Mobile Cards
-- Publisher Actions (Quick Actions)
-- Compact Views
+- レポートタイプ & レポート
+- Salesforce1 アプリケーション
+- モバイルカード
+- パブリッシャーアクション (クイックアクション)
+- コンパクトビュー
 
 <a name="sections" />
-### Sections ###
+### セクション ###
 
-This demo is made of five sections:
+このデモアプリケーションは5つのセクションに分かれています:
 
-- [Section 1: Create your Report Types and Reports](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section1)
-- [Section 2: Create your Visualforce Pages and Charts using the Analytics API](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section2)
-- [Section 3: Add a Mobile Card to your Salesforce1 Application](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section3)
-- [Section 4: Add a Quick Action to your Salesforce1 Application](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section4)
-- [Section 5: Create a Compact Layout for the Opinion Question](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section5)
+- [Section 1: Create your Report Types and Reports](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section1)
+- [Section 2: Create your Visualforce Pages and Charts using the Analytics API](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section2)
+- [Section 3: Add a Mobile Card to your Salesforce1 Application](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section3)
+- [Section 4: Add a Quick Action to your Salesforce1 Application](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section4)
+- [Section 5: Create a Compact Layout for the Opinion Question](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section5)
 
-It is recommended that you start with [Section 1](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md#section1) and proceed to the end.
+基本的には [セクション 1](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section1) から順番に行っていく事をお勧めします。
 
 <a name="demo" />
-## Demo ##
+## デモアプリケーションの作成 ##
 
 <a name="section1" />
-#### Section 1: Create your Report Types and Reports ####
+#### セクション 1: レポートタイプとレポートの作成 ####
 
-In this demo we will use reports within a Salesforce1 application. To create these custom reports, we must first create a custom report type from which we will create and customize our report.
+このデモアプリケーションではSalesforce1アプリケーション内でレポートを利用します。カスタムレポートを作成するにあたり、その前にカスタムレポートタイプを作成する必要があります。
 
-We will create a report that displays answers to our opinion questions.
+ここでは意識調査の質問に対する回答のレポートを作成します。
 
-##### Create the custom Report Type #####
+##### カスタムレポートタイプの作成 #####
 
-Create a new custom Report Type.
+新しいカスタムレポートタイプを作成します。
 
-1. Click **Setup** | **Create** | **Report Types**. If prompted click **Continue**.
+1. **設定** | **作成** | **レポートタイプ**をクリックします。 もし解説ページが現れた場合は **続ける**をクリックします。
 
-2. Click **New Custom Report Type**.
+2. **新規カスタムレポートタイプ** をクリックします。
 
-3. From the **Primary Object** select **Opinion Question Answers**.
+3. **主オブジェクト** に **意識調査質問回答** を選択します。
 
-4. For **Report Type Label** enter **Opinion Question Answers**. The **Report Type Name** will autocomplete.
+4. **レポートタイプの表示ラベル** に **意識調査質問回答**. The **レポートタイプ名** には **Opinion_Question_Answers** と入力します。
 
-5. For **Description** enter **Custom report type for opinion question answers**.
+5. **説明** には **意識調査質問回答のカスタムレポートタイプ** と入力します。
 
-6. From **Store in Category** select **Other Reports**.
+6. **カテゴリに格納** で **その他レポート** を選択します。
 
-7. Choose **Deployed** from **Deployment Status**.
+7. **リリース状況** では **リリース済み** を選択します。
 
-8. Click **Next**.
+8. **次へ** をクリックします。
 
-9. Click **Save**.
+9. **保存** をクリックします。
 
-##### Create the Custom Report #####
+##### カスタムレポートの作成 #####
 
-1. Click the **+** button on the menu near **Home** and **Opinions**.
+1. **ホーム** や **意識調査**の並ぶメニューバー上にある **+** ボタンをクリックします。
 
-2. Click **Reports**. Click **No Thanks** if prompted.
+2. **レポート** をクリックします。
 
-3. Click **New Report**.
+3. **新規レポート** をクリックします。
 
-4. Expand **Other Reports** and select **Opinion Question Answers** and click **Create**. Click **No Thanks** if prompted.
+4. **その他レポート** を展開し、 **意識調査質問回答** を選択肢し **作成** をクリックします。
 
-5. Change the report from **Tabular** to **Matrix**.
+5. レポートを **表 形式** から **マトリックス 形式** へ変更します。
 
-6. Drag **Opinion Question: Opinion Question Name** to the area that reads **Drop a field here to create a row grouping.**
+6. **意識調査質問: 意識調査質問番号** を **行のグルーピングを作成するには、ここに項目をドロップします。** の箇所にDrag & Dropします。
 
-7. Drag **Answer** to the area that reads **Drop a field here to create a column grouping.**
+7. **回答** を **列のグルーピングを作成するには、ここに項目をドロップします。** の箇所にDrag & Dropします。
 
-8. Click **Save**.
+8. **保存** をクリックします。
 
-9. Name the report **Answers**. The **Report Unique Name** will autocomplete.
+9. レポート名を **回答** とし、 **レポートの一意の名前** を **Answers** にします。
 
-10. Click **Save and Run Report**.
+10. **レポートを保存して実行** をクリックします。
 
-10. Grab the **Report Id**. You can find this value in the browser URL. Copy this down to use later.
+11. **レポートのId**を確認します。これはブラウザのURLから確認できます。以下の用に取得して下さい。
 
 	![capturereportid](https://f.cloud.github.com/assets/746259/1708947/b2269cce-6116-11e3-92a2-5d3000de90b6.png)
 
-We have now successfully created the Report Type and Report required for the rest of the demo.
+これで必要なレポートタイプおよびレポートの作成が完了しました。
 
 <a name="section2" />
-#### Section 2: Create your Visualforce Pages and Charts using the Analytics API ####
+#### セクション 2: Visualforceページおよび チャートを分析APIを利用して作成する ####
 
-##### Create the Visualforce Component #####
+##### Visualforce コンポーネントの作成 #####
 
-Create a new Visualforce Component.
+新しくVisualforceコンポーネントを作成します
 
-1. Click **Setup** | **Develop** | **Components**.
+1. **設定** | **開発** | **コンポーネント** をクリックします。
 
-2. Click **New**.
+2. **新規** をクリックします。
 
-3. For **Label** enter **OpinionChartPie**. The **Name** will autocomplete.
+3. **表示ラベル** には **意識調査パイチャート** と入力し **名前** には **OpinionChartPie** と入力します。
 
-4. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src** folder in the file **OpinionChartPie.component**.
+4. 以下のコードを **Visualforce Markup** タブに入力します。このコードは **src** フォルダ内の **OpinionChartPie.component** ファイルからも見つける事が可能です。
+
+	**注意**: **YOURREPORTID** の部分を任意の意識調査質問のオブジェクトのIDで書き換えて下さい。IDの取得方法はレポートのサイト同様に、データを表示した際のURL部分から18桁のIDを取得します。
 
 	````html
 	<apex:component >
@@ -208,23 +210,23 @@ Create a new Visualforce Component.
 	</apex:component>
 	````
 
-5. Click **Save**.
+5. **保存** をクリックします。
 
-##### Create the Visualforce Page #####
+##### Visualforceページの作成 #####
 
-Create a new Visualforce Page.
+新しくVisualforceページを作成します。
 
-1. Click **Setup** | **Develop** | **Pages**.
+1. **設定** | **開発** | **ページ** をクリックします。
 
-2. Click **New**.
+2.  **新規** をクリックします。
 
-3. For **Label** enter **OpinionChartPie**. The **Name** will autocomplete.
+3. **表示ラベル** に **意識調査パイチャート** と入力し **名前** に **OpinionChartPie** と入力します。
 
-4. Check the box next to **Available for Salesforce mobile apps**.
+4. **Salesforce モバイルアプリケーションでの使用が可能** にチェックを入れます。
 
-5. Add the following code into the **Visualforce Markup** tab. You can also find this code in the **src* folder in the file **OpinionChartPie.page**.
+5. 以下のコードを **Visualforce Markup** タブに入力します。このコードは **src** フォルダ内の **OpinionChartPie.page** ファイルからも見つける事が可能です。
 
-	**Note**: replace **YOURREPORTID** with the Report Id you captured in the last section.
+	**注意**: **YOURREPORTID** の部分を前のセクションで取得したレポートのIDで書き換えて下さい
 
 	````html
 	<apex:page cache="false"
@@ -240,156 +242,152 @@ Create a new Visualforce Page.
 	</apex:page>
 	`````
 
-6. Click **Save**.
+6. **保存** をクリックします。
 
-7. Click **Preview** to confirm your report runs correctly. You should see a chart similar to the following:
+7. **プレビュー** をクリックし、レポートが正しく表示されるかを確認します。以下の様なレポートが表示されるはずです:
 
 	![Opinion Pie Chart Preview](https://f.cloud.github.com/assets/746259/1708981/655d14bc-6117-11e3-8f7b-c0915ac8362a.png)
 
-You have successfully created a Visualforce Component and Page.
+これでVisualforceコンポーネントおよびページの作成が完了しました。
 
 <a name="section3" />
-#### Section 3: Add a Mobile Card to your Salesforce1 Application ####
+#### セクション 3: モバイルカードをSalesforce1 アプリケーションに追加する ####
 
-Let's update the Opinion Question page layout to include a mobile card.
+意識調査質問のページレイアウトにモバイルカードを追加してみましょう
 
-1. Select the **Opinion Question** page layout. **Setup** | **Create** | **Objects**.
+1. **意識調査質問** のページレイアウトを **設定** | **作成** | **オブジェクト** から選択します。
 
-2. Select **Opinion Question** from the list.
+2. **意識調査質問** をリストから選択します。
 
-3. Under the **Page Layouts** section click **Edit** next to the **Opinion Question Layout**.
+3. **ページレイアウト** セクションで **意識調査質問レイアウト** の横の **編集** をクリックします。
 
-4. Select **Visualforce Pages** from the **Opinion Question Layout** and drag **OpinionChartPie** to the **Mobile Cards (Salesforce1 only)** section. 
+4. **Visualforce ページ** を **意識調査質問レイアウト** 選択し、 **意識調査パイチャート** を **モバイルカード (Salesforce1 のみ)** セクションへDrag & Dropします。
 
 	![Opinion Pie Chart in the Mobile Cards](https://f.cloud.github.com/assets/746259/1709006/c469da3a-6117-11e3-9191-a0f5db4c5b25.png)
 
-5. Click **Save**.
+5. **保存** をクリックします。
 
-Let's give it a try.
+実際に試してみましょう。
 
-1. In a new tab on your browser enter the following url: [https://na11.salesforce.com/one/one.app](https://na11.salesforce.com/) to login to the Salesforce1 web client.
+1. 新しいタブを開き、以下のURLを入力し、Salesforce1 Webクライアントへアクセスします: [https://ap.salesforce.com/one/one.app](https://ap.salesforce.com/) 
 
-	**Note**: this client is designed for a mobile screen. You may want to reduce the size of your browser window to make this look more appropriate. Alternatively, you can use a mobile simulator/emulator to login or download the application from the Apple Store or Google Play.
+	**注意**: このクライアントはモバイル画面にあわせてデザインされています。ブラウザウィンドウをモバイル画面のサイズに調整することで、実際のモバイル画面近い挙動を得られます。または、モバイルシュミレータ/エミュレータをからログイン、もしくはApple StoreやGoogle Playからアプリケーションをダウンロードすることも可能です。
 
-2. Expand the menu in the upper-left, expand **Show More** and select the **Opinions** app.
+2. 左上のメニューを開き **表示件数を増やす** をタップし、 **意識調査** アプリケーションを選択します。
 
-3. Choose the **OP-0000** opinion.
+3. **OP-0000** の意識調査を選択します。
 
-4. Swipe to the right (or click the right dot) and click on **Opinion Questions**.
+4. 右側にスワイプ (もしくは右側のドットをクリック) し、**意識調査質問** をクリックします。
 
-5. Choose the **OQ-0000** question.
+5. **OQ-0000** の質問を選択します。
 
-6. Swipe to the right (or click the right dot). You will see the graph on the page.
+6. 右側へスワイプ (もしくは右側のドットをクリック)します。グラフがページ上に表示されています。
 
 	![Chart in Mobile Client](https://f.cloud.github.com/assets/746259/1709024/1df57d66-6118-11e3-8d41-cc042a8b7d48.png)
 
-Let's make an additional update to display the question on the page.
+追加の項目を質問ページに追加してみましょう。
 
-1. On the **Opinion Question Layout** select **Expanded Lookups**.
+1. **意識調査質問レイアウト** より**拡張ルックアップ** を選択します。
 
-2. Drag **Opinion** under the **OpinionChartPie** you recently added. Click **Save**.
+2. **意識調査** を先ほど追加した **意識調査パイチャート** の下へDrag & Dropします、**保存** をクリックします。
 
 	![Adding the Opinion under the Opinion Chart Page](https://f.cloud.github.com/assets/746259/1709061/7aa6f2ba-6118-11e3-85ba-4643af06af9c.png)
 
 
-3. Go back to your mobile Salesforce1 app. Refresh the page and return to the chart. You now see the **Opinion Question** information below the chart.
+3. Salesforce1モバイルアプリケーションにもどります。ページをリフレッシュし、元のチャートのページの戻ります。すると**意識調査質問** の情報がチャートの下に表示されているでしょう。
 
 	![Opinion Chart with Opinion Question](https://f.cloud.github.com/assets/746259/1709078/bd5ce272-6118-11e3-8473-9c88f9d0281f.png)
 
-Congratulations. You have added a mobile card to your Salesforce1 application.
+おめでとうございます。モバイルカードをSalesforce1アプリケーションへ追加する事に成功しました。
 
 <a name="section4" />
-#### Section 4: Add a Quick Action to your Salesforce1 Application ####
+#### セクション 4: クイックアクションをSalesforce1アプリケーションへ追加する ####
 
-1. Click **Setup** | **Create** | **Objects**.
+1. **設定** | **作成** | **オブジェクト** をクリックします。
 
-2. Select **Opinion Question** from the list.
+2. **意識調査質問** をリストから選択します。
 
-3. Under the **Buttons, Links, and Actions** section click **New Action**.
+3. **ボタン、リンク、およびアクション** セクションより**新規アクション**をクリックします。
 
-4. Select **Update a Record** from the **Action Type**.
+4. **レコードを更新** を **アクション種別** に選択します。
 
-5. For **Label** enter **Deactivate Question**. The **Name** will autocomplete.
+5. **表示ラベル** に **質問の無効化** と入力し、 **名前** に **Deactivate_Question** と入力します。
 
-6. Click **Save**.
+6. **保存** をクリックします。
 
-7. From the **Opinion Question Fields** drag **Deactivation Reason** to the page.
+7. **意識調査質問 項目** より**質問の無効化** をページへ Drag & Dropします。
 
 	![Deactivation Reason](https://f.cloud.github.com/assets/746259/1709108/1faddd3c-6119-11e3-8b60-c84cbd7821fc.png)
 
-8. Click **Save**.
+8. **保存** をクリックします。
 
-9. Click **New** under **Predefined Field Values**.
+9. **定義済み項目値** の **新規** をクリックします。
 
-10. Select **Is Active** from the **Field Name**.
+10. **有効** を **項目名** から選択します。
 
-11. In the formula editor enter "False" (without the double quotes) under the **Specify New Field Value**.
+11. **新規項目値の指定** の数式エディタへ "False" (ダブルクォートは無し) を入力しします。
 
-12. Click **Save**.
+12. **保存** をクリックします。
 
-13. Navigate back to the **Opinion Question** object, select the **Page Layouts** section, and click **Edit** next to the **Opinion Question Layout**.
+13. **意識調査質問** オブジェクトまで戻り、**ページレイアウト** セクションから **意識調査質問レイアウト** の横にある **編集** をクリックします。
 
-14. Click the link **override the global publisher layout** under **Publisher Actions**.
+14. **パブリッシャーアクション** にある　**グローバルパブリッシャーレイアウトを上書き** をクリックします。
 
-15. Select **Actions** under the **Opinion Question Layout**.
+15. **意識調査質問レイアウト** の下にある **アクション** を選択します。
 
-16. Drag the **Deactivate Question** to the front of the **Publisher Actions** list.
+16. **質問の無効化** を **パブリッシャーアクション** リストの先頭に Drag & Dropします。
 
-	**Note**: You may see a message in the **Publisher Actions** section regarding actions being inherited from the global publisher layout, simply click the **override the global publisher layout** link to enable.
+	**注意**: **パブリッシャーアクション** のセクションには通常グローバルパブリッシャーレイアウトで定義された項目が並びますが、これを上書きする事が可能で、 **グローバルパブリッシャーレイアウトを上書き** のリンクをクリックします。
 
 	![Deactivation Reason in Pulisher Actions list](https://f.cloud.github.com/assets/746259/1709130/6b5eb4ae-6119-11e3-92ec-b71f250bb264.png)
 
-17. Click **Save**.
+17. **保存** をクリックします。
 
-Let's try it out and see it in action!
+実際に試してみましょう。!
 
-1. Return to the mobile application. Make sure you've refreshed the application.
+1. モバイルアプリケーションに戻ります。アプリケーションをリフレッシュする事を忘れないで下さい。
 
-2. Expand the menu in the upper-left, expand **Show More** and select the **Opinions** app.
+2. 左上のメニューを開き、 **表示件数を増やす** から **意識調査** アプリケーションをクリックします。
 
-3. Choose the **OP-0000** opinion.
+3. **OP-0000** の意識調査を選択します。
 
-4. Swipe to the right (or click the right dot) and click on **Opinion Questions**.
+4. 右へスワイプ (もしくは右のドットをクリック) し、**意識調査質問**をクリックします。
 
-5. Choose the **OQ-0001** question.
+5. **OQ-0001** の質問をクリックします。
 
-6. Click the **Quick Actions** button in the lower right-hand corner of the screen. It is a blue box with a + in the middle.
+6. スクリーン右下角にある、青いボックスに+マークの入った **クイックアクション** ボタンをクリックします。
 
 	![deactivatequestionactionlist](https://f.cloud.github.com/assets/746259/1709135/9ad5657a-6119-11e3-8631-a7ccd4958d9f.png)
 
-7. Click **Deactivate Question**.
+7. **質問の無効化**をクリックします。
 
-8. Select **Boss Told Me To** from the **Deactivation Reason** list.
+8. **会社からの削除命令** を **無効化の理由** リストより選択します。
 
 	![Select Deactivation Reason](https://f.cloud.github.com/assets/746259/1709147/c070bdd4-6119-11e3-8917-9f08b9003f41.png)
 
-9. Click **Submit**.
+9. **送信** をクリックします。
 
 <a name="section5" />
-#### Section 5: Create a Compact Layout for the Opinion Question ####
+#### セクション 5: 意識調査質問のコンパクトレイアウトを作成する ####
 
-1. Click **Setup** | **Create** | **Objects**.
+1. **設定** | **作成** | **オブジェクト** をクリックします。
 
-2. Select **Opinion Question** from the list.
+2. **意識調査質問** をリストより選択します。
 
-3. Under **Compact Layouts** click **New**.
+3. **コンパクトレイアウト** から **新規** をクリックします。
 
-4. For **Label** enter **Custom Compact Layout**. The **Name** will autocomplete.
+4. **表示ラベル** に **カスタムコンパクトレイアウト** と入力し、**名前** に **Custom Compact Layout** と入力します。
 
-5. Choose the following fields to add in this order: **Opinion Question Name**, **Question**, **Is Active**, and **Deactivation Reason**.
+5. 以下のフィールドを選択して並べます: **意識調査質問番号**, **質問**, **有効**, **無効化の理由**
 
-6. Click **Save**.
+6. **保存** をクリックします。
 
-7. Click **Compact Layout Assignment** and **Edit Assignment**. Select **Custom Compact Layout** from the list and click **Save**.
+7. **コンパクトレイアウトの割当** をクリックし、 **割り当ての編集**をクリックします。**カスタムコンパクトレイアウト** をリストより選択し **保存** をクリックします。
 
-8. Return to the **Opinion Question** page in the mobile application. Make sure you've refreshed the application by pulling down on the page.
+8. モバイルアプリケーションで **意識調査質問** ページへ戻り、ページをリフレッシュします。
 
-	**Note**: Salesforce aggressively caches pages. You may have to clear your browser history or close the browser/emulator to see the updated view.
+	**注意**: Salesforceはページを積極的にキャッシュします。もし新しいビューが表示されない場合は、ブラウザの履歴を消去するか、もしくはブラウザ/エミュレータを一旦閉じて見て下さい。
 
-9. You will now see an updated mobile view based on the compact view you just created.
+9. ページがコンパクトレイアウトによって設定したレイアウトで表示されている事を確認します。
 
-Congratulations! You have successfully completed this demo application.
-
-
-
-
+おめでとうございます! これでこのサンプルアプリケーションの作成が完了しました！！
