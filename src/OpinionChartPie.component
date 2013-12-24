@@ -27,7 +27,7 @@
     	        	{
         	        	"value": "{!questionName}",
 	            	    "operator": "equal",
-    	            	"column": "072E0000002ec1f"
+    	            	"column": "YOUROQID"
         	    	}]
                 }
             },
