@@ -44,7 +44,6 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableFeeds>false</enableFeeds>
@@ -54,9 +53,9 @@
         <fullName>Contact__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
-        <label>Contact</label>
+        <label>取引先責任者</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Opinion Respondents</relationshipLabel>
+        <relationshipLabel>意識調査回答者</relationshipLabel>
         <relationshipName>Opinion_Respondents</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -66,7 +65,7 @@
         <fullName>Opinion_Completed_Location__c</fullName>
         <displayLocationInDecimal>true</displayLocationInDecimal>
         <externalId>false</externalId>
-        <label>Opinion Completed Location</label>
+        <label>回答時位置情報</label>
         <required>false</required>
         <scale>10</scale>
         <trackTrending>false</trackTrending>
@@ -76,9 +75,9 @@
         <fullName>Opinion__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
-        <label>Opinion</label>
+        <label>意識調査</label>
         <referenceTo>Opinion__c</referenceTo>
-        <relationshipLabel>Opinion Respondents</relationshipLabel>
+        <relationshipLabel>意識調査回答者</relationshipLabel>
         <relationshipName>Opinion_Respondents</relationshipName>
         <required>true</required>
         <trackTrending>false</trackTrending>
@@ -87,7 +86,7 @@
     <fields>
         <fullName>Respondent_FirstName__c</fullName>
         <externalId>false</externalId>
-        <label>Respondent_FirstName</label>
+        <label>回答者 名</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -97,14 +96,14 @@
     <fields>
         <fullName>Respondent_LastName__c</fullName>
         <externalId>false</externalId>
-        <label>Respondent_LastName</label>
+        <label>回答者 姓</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Opinion Respondent</label>
+    <label>意識調査回答者</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
@@ -112,10 +111,9 @@
     </listViews>
     <nameField>
         <displayFormat>ORR-{0000}</displayFormat>
-        <label>Opinion Respondent Name</label>
+        <label>意識調査回答者番号</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Opinion Respondents</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

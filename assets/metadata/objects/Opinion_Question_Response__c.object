@@ -44,9 +44,8 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>This is the possible responses for a question. These get displayed in the UI</description>
+    <description>選択可能な回答値として使用します。これらはUIによって取得され使用されます</description>
     <enableActivities>false</enableActivities>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
@@ -55,8 +54,9 @@
         <fullName>Opinion_Question__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
-        <label>Opinion Question</label>
+        <label>意識調査質問</label>
         <referenceTo>Opinion_Question__c</referenceTo>
+        <relationshipLabel>意識調査質問回答選択値</relationshipLabel>
         <relationshipName>Opinion_Responses</relationshipName>
         <required>true</required>
         <trackTrending>false</trackTrending>
@@ -65,16 +65,16 @@
     <fields>
         <fullName>Response_Option__c</fullName>
         <externalId>false</externalId>
-        <inlineHelpText>enter T, or F for true/false
-else plain text for other options</inlineHelpText>
-        <label>Response Option</label>
+        <inlineHelpText>真偽値は はい/いいえ で利用
+もしくはテキストが格納されます。</inlineHelpText>
+        <label>意識調査回答値</label>
         <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Opinion Question Response</label>
+    <label>意識調査質問回答選択値</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
@@ -82,10 +82,9 @@ else plain text for other options</inlineHelpText>
     </listViews>
     <nameField>
         <displayFormat>OR-{0000}</displayFormat>
-        <label>Opinion Response Name</label>
+        <label>意識調査回答値番号</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Opinion Question Responses</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

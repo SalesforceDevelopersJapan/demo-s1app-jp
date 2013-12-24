@@ -44,14 +44,6 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>MCLayout</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>MCLayout</fullName>
-        <fields>Name</fields>
-        <fields>Is_Active__c</fields>
-        <fields>Deactivation_Reason__c</fields>
-        <label>MCLayout</label>
-    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableFeeds>true</enableFeeds>
@@ -60,22 +52,22 @@
     <fields>
         <fullName>Deactivation_Reason__c</fullName>
         <externalId>false</externalId>
-        <label>Deactivation Reason</label>
+        <label>無効化の理由</label>
         <picklist>
             <picklistValues>
-                <fullName>Question Unclear</fullName>
+                <fullName>質問が不明瞭</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>No Longer Relevant</fullName>
+                <fullName>関係の無い質問</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Was Stupid to Begin With</fullName>
+                <fullName>まだ聞くには早すぎた</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Boss Told Me To</fullName>
+                <fullName>会社からの削除命令</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -88,7 +80,7 @@
         <fullName>Is_Active__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Is Active</label>
+        <label>有効</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -97,10 +89,10 @@
         <fullName>Opinion__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Opinion</label>
+        <label>意識調査</label>
         <referenceTo>Opinion__c</referenceTo>
-        <relationshipLabel>Opinion Questions</relationshipLabel>
-        <relationshipName>Opinion_Questions_del</relationshipName>
+        <relationshipLabel>意識調査質問</relationshipLabel>
+        <relationshipName>Opinion_Questions</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -109,7 +101,7 @@
     <fields>
         <fullName>Question__c</fullName>
         <externalId>false</externalId>
-        <label>Question</label>
+        <label>質問</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -119,28 +111,28 @@
     </fields>
     <fields>
         <fullName>Response_Type__c</fullName>
-        <description>response type of question.  If text, there will be no opinion_responses. for boolean, there will be 2, for radio, there will be many</description>
+        <description>質問に対する回答のタイプ。テキストの場合、Opinion_Question_Response__C(意識調査回答選択値)は必要ありません。真偽値の場合は2つ、ラジオボタンおよび選択リストの場合は多数必要です。</description>
         <externalId>false</externalId>
-        <inlineHelpText>text = open text response
-boolean = True/False
-Radio = multiple response, with only one selection allowed.
-Picklist = multiple response, with only one selection shown at a time</inlineHelpText>
-        <label>Response Type</label>
+        <inlineHelpText>テキスト = 文字による自由回答
+真偽値 = はい/いいえ
+ラジオボタン = 複数の選択肢から、一つを選択する
+選択リスト = 複数の選択肢から、一つを選択し表示</inlineHelpText>
+        <label>回答タイプ</label>
         <picklist>
             <picklistValues>
-                <fullName>Text</fullName>
+                <fullName>テキスト</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Boolean</fullName>
+                <fullName>真偽値</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Radio</fullName>
+                <fullName>ラジオボタン</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Picklist</fullName>
+                <fullName>選択リスト</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -154,13 +146,13 @@ Picklist = multiple response, with only one selection shown at a time</inlineHel
         <externalId>false</externalId>
         <formula>IF(Is_Active__c,  IMAGE(&quot;https://c.na9.content.force.com/servlet/servlet.FileDownload?file=015E0000002zGs6&quot;, &quot;OK&quot;, 16, 16), IMAGE(&quot;https://c.na9.content.force.com/servlet/servlet.FileDownload?file=015E0000002zGsB&quot;, &quot;NA&quot;, 16, 16))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Status</label>
+        <label>状況</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Opinion Question</label>
+    <label>意識調査質問</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
@@ -168,11 +160,10 @@ Picklist = multiple response, with only one selection shown at a time</inlineHel
     </listViews>
     <nameField>
         <displayFormat>OQ-{0000}</displayFormat>
-        <label>Opinion Question Name</label>
+        <label>意識調査質問番号</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Opinion Questions</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

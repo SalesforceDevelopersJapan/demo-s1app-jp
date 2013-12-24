@@ -2,7 +2,7 @@
 Opinion__c newOpinion = new Opinion__c();
 
 newOpinion.Name__c = 'OP-0001';
-newOpinion.Description__c = 'Preferred Roast Opinions';
+newOpinion.Description__c = '焙煎に関する意識調査';
 
 insert newOpinion;
 
@@ -11,21 +11,21 @@ Opinion_Question__c newOpinionQuestion = new Opinion_Question__c();
 
 newOpinionQuestion.Is_Active__c = true;
 newOpinionQuestion.Opinion__c = newOpinion.Id;
-newOpinionQuestion.Question__c = 'I prefer a dark roast.';
+newOpinionQuestion.Question__c = 'ダークローストが好み';
 
 insert newOpinionQuestion;
 
 // question responses
 Opinion_Question_Response__c newOpinionQuestionResponse = new Opinion_Question_Response__c();
 
-newOpinionQuestionResponse.Response_Option__c = 'Yes';
+newOpinionQuestionResponse.Response_Option__c = 'はい';
 newOpinionQuestionResponse.Opinion_Question__c = newOpinionQuestion.Id;
 
 insert newOpinionQuestionResponse;
 
 newOpinionQuestionResponse = new Opinion_Question_Response__c();
 
-newOpinionQuestionResponse.Response_Option__c = 'No';
+newOpinionQuestionResponse.Response_Option__c = 'いいえ';
 newOpinionQuestionResponse.Opinion_Question__c = newOpinionQuestion.Id;
 
 insert newOpinionQuestionResponse;
@@ -34,63 +34,63 @@ insert newOpinionQuestionResponse;
 Opinion_Question_Answer__c newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'Yes';
+newOpinionQuestionAnswer.Answer__c = 'はい';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'Yes';
+newOpinionQuestionAnswer.Answer__c = 'はい';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'Yes';
+newOpinionQuestionAnswer.Answer__c = 'はい';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'Yes';
+newOpinionQuestionAnswer.Answer__c = 'はい';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'Yes';
+newOpinionQuestionAnswer.Answer__c = 'はい';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'No';
+newOpinionQuestionAnswer.Answer__c = 'いいえ';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'No';
+newOpinionQuestionAnswer.Answer__c = 'いいえ';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'No';
+newOpinionQuestionAnswer.Answer__c = 'いいえ';
 
 insert newOpinionQuestionAnswer;
 
 newOpinionQuestionAnswer = new Opinion_Question_Answer__c();
 
 newOpinionQuestionAnswer.Opinion_Question__c = newOpinionQuestion.Id;
-newOpinionQuestionAnswer.Answer__c = 'No';
+newOpinionQuestionAnswer.Answer__c = 'いいえ';
 
 insert newOpinionQuestionAnswer;
 
@@ -99,6 +99,6 @@ newOpinionQuestion = new Opinion_Question__c();
 
 newOpinionQuestion.Is_Active__c = true;
 newOpinionQuestion.Opinion__c = newOpinion.Id;
-newOpinionQuestion.Question__c = 'I prefer whole beans.';
+newOpinionQuestion.Question__c = 'ホイールビーンが好み';
 
 insert newOpinionQuestion;

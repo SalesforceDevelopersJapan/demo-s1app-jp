@@ -44,7 +44,6 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableFeeds>true</enableFeeds>
@@ -52,9 +51,9 @@
     <enableReports>false</enableReports>
     <fields>
         <fullName>Answer__c</fullName>
-        <description>This is where we store the actual answer the user selected</description>
+        <description>ユーザが選択した実際の回答を保存します。</description>
         <externalId>false</externalId>
-        <label>Answer</label>
+        <label>回答</label>
         <length>255</length>
         <required>true</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -66,7 +65,7 @@
         <fullName>Location__c</fullName>
         <displayLocationInDecimal>true</displayLocationInDecimal>
         <externalId>false</externalId>
-        <label>Location</label>
+        <label>位置情報</label>
         <required>false</required>
         <scale>5</scale>
         <trackFeedHistory>false</trackFeedHistory>
@@ -77,15 +76,16 @@
         <fullName>Opinion_Question__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
-        <label>Opinion Question</label>
+        <label>意識調査質問</label>
         <referenceTo>Opinion_Question__c</referenceTo>
+        <relationshipLabel>意識調査質問回答</relationshipLabel>
         <relationshipName>Opinion_Answers</relationshipName>
         <required>true</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <label>Opinion Question Answer</label>
+    <label>意識調査質問回答</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
@@ -93,11 +93,10 @@
     </listViews>
     <nameField>
         <displayFormat>OA-{0000}</displayFormat>
-        <label>Opinion Answer Name</label>
+        <label>意識調査回答番号</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Opinion Question Answers</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

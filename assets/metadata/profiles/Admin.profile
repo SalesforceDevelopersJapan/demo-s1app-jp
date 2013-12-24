@@ -225,18 +225,18 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <layoutAssignments>
-        <layout>Opinion_Question_Answer__c-Opinion Question Answer Layout</layout>
+        <layout>Opinion_Question_Answer__c-意識調査質問回答レイアウト</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opinion_Question_Response__c-Opinion Question Response Layout</layout>
+        <layout>Opinion_Question_Response__c-意識調査質問回答選択値レイアウト</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opinion_Question__c-Opinion Question Layout</layout>
+        <layout>Opinion_Question__c-意識調査質問レイアウト</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opinion_Respondent__c-Opinion Respondent Layout</layout>
+        <layout>Opinion_Respondent__c-意識調査回答者レイアウト</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opinion__c-Opinion Layout</layout>
+        <layout>Opinion__c-意識調査レイアウト</layout>
     </layoutAssignments>
 </Profile>

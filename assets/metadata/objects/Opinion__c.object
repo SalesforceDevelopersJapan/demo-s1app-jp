@@ -44,27 +44,20 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>Master</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>Master</fullName>
-        <fields>Name</fields>
-        <fields>Status__c</fields>
-        <fields>OwnerId</fields>
-        <label>Master</label>
-    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>All the questions will go to Opinion_Question_c.
-Based on the question type, the response text for each question will be in Opinion_response_c.
-All the answers will be in Opinion_answers_c.</description>
+    <description>すべての質問はOpinion_Question__c(意識調査質問)に格納されます。
+
+質問のタイプによっては、回答の選択肢がOpinion_response__c(意識調査回答選択値)から利用されます。
+すべての回答はOpinion_answers__c(意識調査回答)に格納されます。</description>
     <enableActivities>false</enableActivities>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
     <fields>
         <fullName>Description__c</fullName>
-        <description>short description of what the opinion is about</description>
+        <description>意識調査に関する短い概要</description>
         <externalId>false</externalId>
-        <label>Description</label>
+        <label>概要</label>
         <length>32768</length>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -74,7 +67,7 @@ All the answers will be in Opinion_answers_c.</description>
     <fields>
         <fullName>Name__c</fullName>
         <externalId>false</externalId>
-        <label>Name</label>
+        <label>名前</label>
         <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -85,22 +78,22 @@ All the answers will be in Opinion_answers_c.</description>
     <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
-        <label>Status</label>
+        <label>状況</label>
         <picklist>
             <picklistValues>
-                <fullName>Pending</fullName>
+                <fullName>停止</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Active</fullName>
+                <fullName>実施中</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Complete</fullName>
+                <fullName>完了</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Deferred</fullName>
+                <fullName>延期</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -112,14 +105,14 @@ All the answers will be in Opinion_answers_c.</description>
     <fields>
         <fullName>Sync_to_Mobile_App__c</fullName>
         <defaultValue>false</defaultValue>
-        <description>Check this to have the opinion show up on the mobile app</description>
+        <description>モバイルアプリケーション上で表示を行うかどうか</description>
         <externalId>false</externalId>
-        <label>Sync to Mobile App</label>
+        <label>モバイルアプリと同期</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <label>Opinion</label>
+    <label>意識調査</label>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -134,11 +127,10 @@ All the answers will be in Opinion_answers_c.</description>
     </listViews>
     <nameField>
         <displayFormat>OP-{0000}</displayFormat>
-        <label>Opinion Name</label>
+        <label>意識調査番号</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Opinions</pluralLabel>
     <searchLayouts>
         <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>

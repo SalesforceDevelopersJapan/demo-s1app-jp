@@ -1,13 +1,13 @@
-echo "Starting the demo schema import process. This should only take a few minutes to complete."
+echo "スキーマインポートプロセスを開始します。完了までに少々お時間がかかる場合があります。"
 echo ""
-echo "Step 1: Log in to your Salesforce organization. Close the browser window when complete."
+echo "ステップ 1: Salesforce組織へログインします。完了したらブラウザウィンドウを閉じて下さい。"
 
 force login
 
-echo "Step 2: Starting the metadata import process using the Force CLI tool."
+echo "ステップ 2: Force CLIツールを使ったメタデータのインポートプロセスを開始します"
 echo ""
 
 force import metadata
 
 echo ""
-echo "The import process has completed."
+echo "インポートプロセスが完了しました。"
