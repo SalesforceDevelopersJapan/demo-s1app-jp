@@ -17,7 +17,7 @@ https://github.com/developerforce/demo-df13-devkeynote-s1app
 - パブリッシャーアクション (クイックアプション)
 - コンパクトビュー
 
-まず初めに[セットアップガイド](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/SETUP.md) の手順を行って下さい。
+まず初めに[セットアップガイド](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/SETUP.md) の手順を行って下さい。
 
 実際のデモ動作について確認したい場合にはDave CarrollがDreamforceで行ったデモを以下よりご覧下さい。
 [Developer Keynote at Dreamforce 13](http://www.youtube.com/watch?v=KELBWQIVcfk&list=PLScnZWsj0lrRCMuciE0La1_iKtCPt4Kka).
@@ -41,4 +41,4 @@ https://github.com/developerforce/demo-df13-devkeynote-s1app
 
 ### 問題の報告 ###
 
-もしこのデモアプリケーションに問題を見つけた場合には、リポジトリの [issues](https://github.com/developerforce/demo-s1app-jp/issues) セクションからレポートを頂けると助かります。
+もしこのデモアプリケーションに問題を見つけた場合には、リポジトリの [issues](https://github.com/DeveloperForceJapan/demo-s1app-jp/issues) セクションからレポートを頂けると助かります。
