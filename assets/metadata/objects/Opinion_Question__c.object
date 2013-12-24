@@ -144,7 +144,7 @@
     <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
-        <formula>IF(Is_Active__c,  IMAGE(&quot;https://c.na9.content.force.com/servlet/servlet.FileDownload?file=015E0000002zGs6&quot;, &quot;OK&quot;, 16, 16), IMAGE(&quot;https://c.na9.content.force.com/servlet/servlet.FileDownload?file=015E0000002zGsB&quot;, &quot;NA&quot;, 16, 16))</formula>
+        <formula>IF(Is_Active__c,  IMAGE(&quot;/img/msg_icons/confirm16.png&quot;, &quot;OK&quot;, 16, 16), IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;NA&quot;, 16, 16))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>状況</label>
         <required>false</required>
