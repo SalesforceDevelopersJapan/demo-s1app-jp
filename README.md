@@ -1,34 +1,43 @@
-# Dreamforce 13 Developer Keynote - Salesforce1 App Demo #
+#  - Salesforce1 サンプルアプリケーション #
 
-Demos are sets of step-by-step guides designed to help you learn to use key capabilities of the Salesforce platform. Each demo provides instructions that guide you through the process of developing an application.
+本デモアプリケーションはDreamforce 2013のDeveloper Keynoteで実施された内容をローカライズした物です。
+Fork元のオリジナルリポジトリは以下となります。
 
-In this demo, you will use an application called **Opinionator** to learn about some of the key components of the Salesforce1 platform, including:
+https://github.com/developerforce/demo-df13-devkeynote-s1app
+
+
+デモはステップバイステップのガイドとなっており、Salesforce1 Platformの機能を理解できるようになっています。それぞれのデモでは、アプリケーションを作成する為に必要なプロセスを順を追って解説しています。
+
+本デモアプリケーションでは **意識調査** という簡単なアプリケーションで、Salesforce1 platformの以下の機能について学んでいきます:
 
 - Force Command-line Interface (CLI)
-- Mobile Visualforce Components & Pages
-- Report Types and Reports
-- Mobile Cards
-- Publisher Actions (Quick Actions)
-- Compact Views
+- モバイル Visualforce コンポーネント & ページ
+- レポートタイプおよびレポート
+- モバイルカード
+- パブリッシャーアクション (クイックアプション)
+- コンパクトビュー
 
-To get started please begin with these [Setup Instructions](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/SETUP.md).
+まず初めに[セットアップガイド](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/SETUP.md) の手順を行って下さい。
 
-To see these demos in action please watch Dave Carroll in the [Developer Keynote at Dreamforce 13](http://www.youtube.com/watch?v=KELBWQIVcfk&list=PLScnZWsj0lrRCMuciE0La1_iKtCPt4Kka).
+実際のデモ動作について確認したい場合にはDave CarrollがDreamforceで行ったデモを以下よりご覧下さい。
+[Developer Keynote at Dreamforce 13](http://www.youtube.com/watch?v=KELBWQIVcfk&list=PLScnZWsj0lrRCMuciE0La1_iKtCPt4Kka).
 
-### Repository Structure ###
+### リポジトリ構造 ###
 
-This demo has the following repository structure:
+このデモアプリケーションは以下の様なリポジトリ構造となっています:
 
-- **root**: In the **root** folder of this repository you will find the script for this demo, **DEMO.md**. Before starting the demo, make sure you have followed all the required steps indicated in the **SETUP.md**.
+- **ルート**: このリポジトリの**ルート** フォルダでは **DEMO.md** というデモのスクリプトを手に入れる事ができます。  デモアプリケーションの作成を行う前に、 **SETUP.md** の要件をすべて満たしている事を確認して下さい。
 
-- **assets**: In the **assets** folder you will find all the dependencies required for this demo. The **SETUP.md** file provides you with instructions on how to use this content.
+- **assets**:  **assets** フォルダには、このデモアプリケーションの依存ファイルが収められています。 **SETUP.md** ファイルでこれらの依存ファイルの使用方法について説明されています。
 
-- **src**: In the **src** folder you will find source code used in this demo. The **DEMO.md** file provides you with instructions on how to use these files.
+- **src**: **src** フォルダにはデモアプリケーションのソースコードが収められています。 **DEMO.md** ファイルで、どのようにこれらのコードをりようするかについて説明がなされています。
+- 
 
-### Contributing to the Repository ###
+### リポジトリへのコントリビュート ###
 
-If you find any issues or opportunities for improving this demo, fix them!  Feel free to contribute to this project by [forking](http://help.github.com/fork-a-repo/) this repository and make changes to the content.  Once you've made your changes, share them back with the community by sending a pull request. Please see [How to send pull requests](http://help.github.com/send-pull-requests/) for more information about contributing to Github projects.
+もしあなたがこのリポジトリの内容に問題を発見して、デモアプリケーションを改善出来ると思った場合には、是非 [fork](http://help.github.com/fork-a-repo/) を行い修正をして、[Pull Requests](http://help.github.com/send-pull-requests/)をお送り下さい。こちらのリポジトリへのPull Requestは日本語で構いません。もしFork元に直接Pull Requestを送る場合には英語でお願い致します。
 
-### Reporting Issues ###
 
-If you find any issues with this demo that you can't fix, feel free to report them in the [issues](https://github.com/developerforce/demo-df13-devkeynote-s1app/issues) section of this repository.
+### 問題の報告 ###
+
+もしこのデモアプリケーションに問題を見つけた場合には、リポジトリの [issues](https://github.com/developerforce/demo-s1app-jp/issues) セクションからレポートを頂けると助かります。
