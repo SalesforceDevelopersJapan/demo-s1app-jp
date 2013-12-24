@@ -1,58 +1,59 @@
-# Dreamforce 13 Developer Keynote - Salesforce1 App Demo Setup #
+# Salesforce1 サンプルアプリ セットアップ #
 
 <a name="setup-and-configuration" />
-## Setup and Configuration ##
+## セットアップとコンフィグレーション ##
 
-Using the following steps you can setup all prerequisites for running the Dreamforce 13 developer keynote Salesforce1 demo application.
+以下のステップを行う事で、Dreamforce 13 developer keynoteのSalesforce1デモアプリケーションの環境を構築できます。
 
-#### Step 1: Setup a Developer Edition organization ####
+#### ステップ 1: Developer Edition 組織のセットアップ ####
 
-If you are not already a member of the Force.com developer community, go to [http://developer.force.com/join](http://developer.force.com/join) and follow the instructions for signing up for a Developer Edition organization. Even if you already have Enterprise Edition, Unlimited Edition, or Performance Edition, use Developer Edition for developing, staging, and testing your solutions against sample data to protect your organization’s live data. This is especially true for applications that insert, update, or delete data (as opposed to simply reading data).
+もしあなたがまだSalesforce Developer Networkのメンバー出ない場合は, [http://developer.force.com/join](http://developer.force.com/join) に行き、手順に従ってDeveloper Edition組織のアカウントをサインアップして下さい。既にEnterprise EditionやUnlimited Edition、Performance Editionといった本番利用のアカウントをお持ちの場合でも、Developer Editionは開発、ステージング、既存の組織のデータを汚さずにサンプルデータを利用したテスト等に利用する事が可能です。特にデータを追加、更新、削除を行う様なアプリケーションの場合には非常に有効です。
 
-If you already have a Developer Edition organization, verify that you have the “API Enabled” permission. This permission is enabled by default, but may have been changed by an administrator. For more information, see the help in the Salesforce user interface.
+すでにDeveloper Edition組織を持っている場合は、アカウントが“API の有効化” 権限を保持している事を確認します。この権限はデフォルトで有効となっておりますが、変更がなされていないかを確認します。より詳細な情報については、Salesforceのユーザインタフェースよりヘルプを参考にして下さい。
 
-#### Step 2: Setup the Force CLI tool ####
+#### Step 2: Force CLI ツールをセットアップする ####
 
-Download the the Force command-line interface (CLI) tool. You can immediately download the precompiled binararies from the following locations:
+Force command-line interface (CLI) ツールをダウンロードします。既にコンパイル済みのバイナリファイルを以下よりダウンロード可能です:
 
 * Linux: [32-bit](https://godist.herokuapp.com/projects/heroku/force/releases/current/linux-386/force) | [64-bit](https://godist.herokuapp.com/projects/heroku/force/releases/current/linux-amd64/force)
 * OS X: [32-bit](https://godist.herokuapp.com/projects/heroku/force/releases/current/darwin-386/force) | [64-bit](https://godist.herokuapp.com/projects/heroku/force/releases/current/darwin-amd64/force)
 * Windows: [32-bit](https://godist.herokuapp.com/projects/heroku/force/releases/current/windows-386/force.exe) | [64-bit](https://godist.herokuapp.com/projects/heroku/force/releases/current/windows-amd64/force.exe)
 
-Alternatively, you can clone/fork the repository and build the executable yourself. For more information see the post [A Command-line Interface for Force.com](http://www.wadewegner.com/2013/11/a-command-line-interface-for-forcecom/).
+もしくは、リポジトリからclone/forkして実行可能ファイルを自身でビルドする事も可能です。より詳細な情報については以下をご覧下さい。
+[A Command-line Interface for Force.com](http://www.wadewegner.com/2013/11/a-command-line-interface-for-forcecom/).
 
-Once you have the executable, ensure you can run it from the command. For example, you can create the folder ~/bin for the force executable. Add the bin folder to your path with the following command (or update your .bash_profile):
+実行可能バイナリを手に入れたら、コマンドラインから実行出来るようにパスを通します。例えば、 ~/bin フォルダをforceコマンド用に作成します。そして、以下の様なコマンドでbinフォルダにパスを通します。(もしくは .bash_profile を更新します):
 
 ````bash
 export PATH=~/bin:$PATH
 ````
 
-You may also need to update the permissions on the force executable in order to run it. To do so, run the following command:
+またforceのバイナリを実行可能とするようにパーミッションを変更する必要があります。これを行うには、以下のコマンドを実行します:
 
 ````bash
 chmod 755 force
 ````
 
-#### Step 3: Clone the repository ####
+#### ステップ 3: リポジトリのClone ####
 
-Clone this repository.
+このリポジトリをCloneします。
 
 ````bash
-git clone https://github.com/developerforce/demo-df13-devkeynote-s1app.git
+git clone https://github.com/DeveloperForceJapan/demo-s1app-jp.git
 ````
 
-#### Step 4: Import the schema into your Developer Edition organization ####
+#### ステップ 4: Developer Edition組織にスキーマをインポートする ####
 
 ````bash
-cd demo-df13-devkeynote-s1app
+cd demo-s1app-jp
 cd assets
 chmod 755 *.sh
 . importschema.sh
 ````
 
-The demo application, layouts, and objects now exist in your org.
+デモのアプリケーション、レイアウトそしてオブジェクトが組織に生成されます。
 
-#### Step 5: Import the data into your Developer Edition organization ####
+#### ステップ 5: Developer Edition組織にデータをインポートする ####
 
 ````bash
 cd demo-df13-devkeynote-s1app
@@ -60,23 +61,23 @@ cd assets
 . importdata.sh
 ````
 
-#### Step 6: Enable Chatter and Publisher Actions in your organization ####
+#### ステップ 6: 組織のChatterおよびパブリッシャーアクションを有効化する ####
 
-In this demo we will use Chatter and Publisher Actions. Consequently, we need to enable this functionality within the Developer Edition (DE) org.
+このデモアプリケーションではChatterおよびパブリッシャーアクションを利用します。そこでこれらの機能をお使いのDeveloper Edition (DE) 組織で有効かする必要があります。
 
-1. Log into Salesforce: [https://login.salesforce.com/](https://login.salesforce.com) using the same Developer Organization you used during the [setup]().
+1. Salesforceへログインします: [https://login.salesforce.com/](https://login.salesforce.com) より 先ほど[セットアップ]()を行った同一Developer Edition組織へログインします。
 
-2. Choose **Setup** | **App Setup** | **Customize** | **Chatter** | **Settings**.
+2. **設定** | **ビルド** | **カスタマイズ** | **Chatter** | **設定** を選択します。
 
-3. Click **Edit** then **Enable**.
+3. **編集** ボタンより **有効** をチェックします。
 
-4. Under **Publisher Actions** click **Enable Publisher Actions** then click **Save**.
+4. **パブリッシャーアクション** の下の **パブリッシャーアクションを有効化** にチェックを入れ **保存** をクリックします。
 
-5. Choose **Setup** | **App Setup** | **Customize** | **Chatter** | **Feed Tracking**.
+5. **設定** | **ビルド** | **カスタマイズ** | **Chatter** | **フィード追跡** を選択します。
 
-6. Select **Opinion**, **Opinion Question**, and **Opinion Answer** in turn and **Enable Feed Tracking**. Be sure to click **Save**.
+6. **意識調査**、**意識調査質問** そして **意識調査回答** を選択し、 **フィード追跡の有効化**にチェックを入れ、 **保存** をクリックします。
 
-You have now enabled Chatter and Publisher Actions for your org and enabled Chatter feeds on your custom objects.
+これで、カスタムオブジェクト上のChatter 及びパブリッシャーアクションがあなたの組織で有効になりました。
 
-You are now ready to [start the demo](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md).
+[デモアプリケーションの開発](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md)の準備が整いました。 
 
