@@ -22,11 +22,11 @@
 
 このデモアプリケーションは5つのセクションに分かれています:
 
-- [Section 1: Create your Report Types and Reports](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section1)
-- [Section 2: Create your Visualforce Pages and Charts using the Analytics API](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section2)
-- [Section 3: Add a Mobile Card to your Salesforce1 Application](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section3)
-- [Section 4: Add a Quick Action to your Salesforce1 Application](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section4)
-- [Section 5: Create a Compact Layout for the Opinion Question](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section5)
+- [セクション 1: レポートタイプとレポートの作成](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section1)
+- [セクション 2: Visualforceページおよびチャートを分析APIを利用して作成](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section2)
+- [セクション 3: モバイルカードをSalesforce1 アプリケーションに追加](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section3)
+- [セクション 4: クイックアクションをSalesforce1アプリケーションへ追加](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section4)
+- [セクション 5: 意識調査質問のコンパクトレイアウトを作成](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section5)
 
 基本的には [セクション 1](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md#section1) から順番に行っていく事をお勧めします。
 
@@ -91,7 +91,7 @@
 これで必要なレポートタイプおよびレポートの作成が完了しました。
 
 <a name="section2" />
-#### セクション 2: Visualforceページおよび チャートを分析APIを利用して作成する ####
+#### セクション 2: Visualforceページおよびチャートを分析APIを利用して作成 ####
 
 ##### Visualforce コンポーネントの作成 #####
 
@@ -251,7 +251,7 @@
 これでVisualforceコンポーネントおよびページの作成が完了しました。
 
 <a name="section3" />
-#### セクション 3: モバイルカードをSalesforce1 アプリケーションに追加する ####
+#### セクション 3: モバイルカードをSalesforce1 アプリケーションに追加 ####
 
 意識調査質問のページレイアウトにモバイルカードを追加してみましょう
 
@@ -301,7 +301,7 @@
 おめでとうございます。モバイルカードをSalesforce1アプリケーションへ追加する事に成功しました。
 
 <a name="section4" />
-#### セクション 4: クイックアクションをSalesforce1アプリケーションへ追加する ####
+#### セクション 4: クイックアクションをSalesforce1アプリケーションへ追加 ####
 
 1. **設定** | **作成** | **オブジェクト** をクリックします。
 
@@ -368,7 +368,7 @@
 9. **送信** をクリックします。
 
 <a name="section5" />
-#### セクション 5: 意識調査質問のコンパクトレイアウトを作成する ####
+#### セクション 5: 意識調査質問のコンパクトレイアウトを作成 ####
 
 1. **設定** | **作成** | **オブジェクト** をクリックします。
 
