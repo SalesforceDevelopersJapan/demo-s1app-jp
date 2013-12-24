@@ -79,5 +79,5 @@ cd assets
 
 これで、カスタムオブジェクト上のChatter 及びパブリッシャーアクションがあなたの組織で有効になりました。
 
-[デモアプリケーションの開発](https://github.com/developerforce/demo-df13-devkeynote-s1app/blob/master/DEMO.md)の準備が整いました。 
+[デモアプリケーションの開発](https://github.com/DeveloperForceJapan/demo-s1app-jp/blob/master/DEMO.md)の準備が整いました。 
 
